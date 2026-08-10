@@ -1,4 +1,4 @@
-﻿<div align="center" style="background-color:#0b1117;border:1px solid #1c2733;border-radius:16px;padding:24px 18px;color:#dbe4ee;">
+<div align="center" style="background-color:#0b1117;border:1px solid #1c2733;border-radius:16px;padding:24px 18px;color:#dbe4ee;">
 
 <!-- ======================= 1 · TERMINAL HERO ======================= -->
 
@@ -40,7 +40,7 @@
       <br>
       <!-- AUTO:TECH2_START -->
 
-<span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/typescript.svg" width="15" height="15" alt="TypeScript" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">TypeScript</span></span>
+<div><span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/typescript.svg" width="15" height="15" alt="TypeScript" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">TypeScript</span></span>
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/javascript.svg" width="15" height="15" alt="JavaScript" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">JavaScript</span></span>
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/html5.svg" width="15" height="15" alt="HTML" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">HTML</span></span>
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/css3.svg" width="15" height="15" alt="CSS" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">CSS</span></span>
@@ -49,7 +49,7 @@
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/framer.svg" width="15" height="15" alt="Framer Motion" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">Framer Motion</span></span>
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/vite.svg" width="15" height="15" alt="Vite" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">Vite</span></span>
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/react.svg" width="15" height="15" alt="React" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">React</span></span>
-      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/nextdotjs.svg" width="15" height="15" alt="Next.js" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">Next.js</span></span>
+      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/nextdotjs.svg" width="15" height="15" alt="Next.js" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">Next.js</span></span></div>
 
 <!-- AUTO:TECH2_END -->
     </td>
@@ -112,8 +112,8 @@
 
 <!-- AUTO:SYNC_START -->
 
-<span style="display:block;text-align:center;color:#6b7f96;font-size:12px;font-family:'JetBrains Mono',Consolas,monospace;"><span style="color:#34d399;">●</span> PROFILE SYNCED · last sync <span style="color:#7dd3fc;">2026-08-10</span> UTC · latest_push <span style="color:#7dd3fc;">arom-studio · 2026-07-29</span></span>
-<span style="display:block;text-align:center;margin-top:8px;"><img src="https://github.com/arnav27-22/arnav27-22/actions/workflows/update-profile.yml/badge.svg" alt="Profile sync workflow status" height="20">&nbsp; <img src="https://github.com/arnav27-22/arnav27-22/actions/workflows/snake.yml/badge.svg" alt="Contribution snake workflow status" height="20"></span>
+<div style="text-align:center;color:#6b7f96;font-size:12px;font-family:'JetBrains Mono',Consolas,monospace;"><span style="color:#34d399;">●</span> PROFILE SYNCED · last sync <span style="color:#7dd3fc;">2026-08-10</span> UTC · latest_push <span style="color:#7dd3fc;">arom-studio · 2026-07-29</span></div>
+<div style="text-align:center;margin-top:8px;"><img src="https://github.com/arnav27-22/arnav27-22/actions/workflows/update-profile.yml/badge.svg" alt="Profile sync workflow status" height="20">&nbsp; <img src="https://github.com/arnav27-22/arnav27-22/actions/workflows/snake.yml/badge.svg" alt="Contribution snake workflow status" height="20"></div>
 
 <!-- AUTO:SYNC_END -->
 
@@ -217,7 +217,7 @@
 
 <!-- AUTO:PROJECTS_START -->
 
-<span style="display:block;text-align:center;padding-bottom:10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ featured_projects</span>
+<div style="text-align:center;padding-bottom:10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ featured_projects</div>
 <br>
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
@@ -270,7 +270,7 @@
   </tr>
 </table>
 <br>
-<span style="display:block;text-align:center;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ other_repos — placeholders &amp; experiments</span>
+<div style="text-align:center;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ other_repos — placeholders &amp; experiments</div>
 <br>
 <a href="https://github.com/arnav27-22/Om-ai" style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:5px 14px;font-size:12px;color:#cbd5e1;text-decoration:none;margin:3px;">Om-ai <span style="color:#6b7f96;">(empty)</span></a>
 <a href="https://github.com/arnav27-22/YT-Download" style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:5px 14px;font-size:12px;color:#cbd5e1;text-decoration:none;margin:3px;">YT-Download <span style="color:#6b7f96;">(empty)</span></a>
@@ -331,12 +331,12 @@
     <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:18px 22px;vertical-align:middle;width:38%;">
       <!-- AUTO:STATS2_START -->
 
-<span style="font-size:13px;color:#cbd5e1;line-height:2;display:inline-block;font-family:'JetBrains Mono',Consolas,monospace;">
+<div style="font-size:13px;color:#cbd5e1;line-height:2;font-family:'JetBrains Mono',Consolas,monospace;">
         repositories&nbsp;&nbsp;&nbsp;<span style="color:#7dd3fc;">6</span><br>
         stars&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7dd3fc;">1</span><br>
         forks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7dd3fc;">0</span><br>
         top_langs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7dd3fc;">TypeScript · JavaScript · HTML · CSS · Dockerfile</span>
-      </span>
+      </div>
       <br><br>
       <span style="font-size:10.5px;color:#475569;">auto-synced <span style="color:#6b7f96;">2026-08-10</span> · UTC · daily · github actions</span>
 

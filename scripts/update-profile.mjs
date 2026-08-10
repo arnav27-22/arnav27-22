@@ -188,7 +188,7 @@ function card(p, isTop) {
 }
 
 function renderProjects(featured, others, empties) {
-  let out = '<span style="display:block;text-align:center;padding-bottom:10px;font-family:' + mono + ';font-size:12px;color:' + C.cyan + ';letter-spacing:2px;">$ featured_projects</span>\n<br>\n';
+  let out = '<div style="text-align:center;padding-bottom:10px;font-family:' + mono + ';font-size:12px;color:' + C.cyan + ';letter-spacing:2px;">$ featured_projects</div>\n<br>\n';
   for (let i = 0; i < featured.length; i += 2) {
     const left = card(featured[i], i === 0);
     const right = featured[i + 1] ? card(featured[i + 1], false) : '<td style="width:50%;"></td>';
@@ -207,7 +207,7 @@ function renderProjects(featured, others, empties) {
     ...empties.map((p) => ({ name: p.name, note: '(empty)', url: p.url })),
   ];
   if (chips.length) {
-    out += `<span style="display:block;text-align:center;font-family:${mono};font-size:12px;color:${C.cyan};letter-spacing:2px;">$ other_repos — placeholders &amp; experiments</span>\n<br>\n`;
+    out += `<div style="text-align:center;font-family:${mono};font-size:12px;color:${C.cyan};letter-spacing:2px;">$ other_repos — placeholders &amp; experiments</div>\n<br>\n`;
     for (const c of chips) {
       const pillStyle = `display:inline-block;background-color:#101a28;border:1px solid ${C.border};border-radius:999px;padding:5px 14px;font-size:12px;color:${C.b};text-decoration:none;margin:3px;`;
       out += `<a href="${c.url}" style="${pillStyle}">${c.name} <span style="color:${C.mute};">${c.note}</span></a>\n`;
@@ -240,12 +240,12 @@ function renderStats(s) {
 }
 
 function renderPanel(s, date) {
-  return `<span style="font-size:13px;color:${C.b};line-height:2;display:inline-block;font-family:${mono};">
+  return `<div style="font-size:13px;color:${C.b};line-height:2;font-family:${mono};">
         repositories&nbsp;&nbsp;&nbsp;<span style="color:${C.soft};">${s.repos}</span><br>
         stars&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:${C.soft};">${s.stars}</span><br>
         forks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:${C.soft};">${s.forks}</span><br>
         top_langs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:${C.soft};">${s.topLangs.join(' · ')}</span>
-      </span>
+      </div>
       <br><br>
       <span style="font-size:10.5px;color:${C.dim};">auto-synced <span style="color:${C.mute};">${date}</span> · UTC · daily · github actions</span>`;
 }
@@ -259,8 +259,8 @@ function renderSync(stats, date, commits, lastPush) {
   line += ` · last sync <span style="color:${C.soft};">${date}</span> UTC`;
   if (commits) line += ` · commits <span style="color:${C.soft};">${commits}</span>`;
   line += ` · latest_push <span style="color:${C.soft};">${lastPush}</span>`;
-  return `<span style="display:block;text-align:center;color:${C.mute};font-size:12px;font-family:${mono};">${line}</span>
-<span style="display:block;text-align:center;margin-top:8px;">${badges.join('&nbsp; ')}</span>`;
+  return `<div style="text-align:center;color:${C.mute};font-size:12px;font-family:${mono};">${line}</div>
+<div style="text-align:center;margin-top:8px;">${badges.join('&nbsp; ')}</div>`;
 }
 
 function localLogos() {
@@ -281,7 +281,7 @@ function renderPills(techKeys) {
     if (!m || !LOGOS.has(m.logo)) return null;
     return `<span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/${m.logo}" width="15" height="15" alt="${m.label}" style="vertical-align:-2px;"> <span style="font-size:12px;color:${m.cat === 'core' ? C.soft : C.b};">${m.label}</span></span>`;
   }).filter(Boolean);
-  return pills.join('\n      ');
+  return `<div>${pills.join('\n      ')}</div>`;
 }
 
 function renderTechTable(techKeys) {
@@ -387,6 +387,10 @@ function validateSnippet(snippet, label) {
     const open = (snippet.match(new RegExp(`<${tag}[ >]`, 'g')) || []).length;
     const close = (snippet.match(new RegExp(`</${tag}>`, 'g')) || []).length;
     if (open !== close) throw new Error(`${label}: tag <${tag}> open=${open} close=${close}`);
+  }
+  const first = snippet.split('\n').find((l) => l.trim());
+  if (!first || !/^<(table|div|tbody|thead|p)/.test(first)) {
+    throw new Error(`${label}: first line must be a block-level tag to survive GitHub's HTML blocks: ${String(first).slice(0, 60)}`);
   }
 }
 
