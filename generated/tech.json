@@ -1,0 +1,139 @@
+{
+  "generatedAt": "2026-08-10T17:33:11.231Z",
+  "topLangs": [
+    "TypeScript",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Dockerfile"
+  ],
+  "repos": {
+    "arom-studio": [
+      "prisma",
+      "tailwind",
+      "framer",
+      "vite",
+      "react",
+      "express",
+      "redis",
+      "postgresql",
+      "aws",
+      "vercel",
+      "node",
+      "typescript"
+    ],
+    "Share-FIle": [
+      "prisma",
+      "tailwind",
+      "framer",
+      "next.js",
+      "react",
+      "node",
+      "typescript"
+    ]
+  },
+  "stack": [
+    {
+      "key": "typescript",
+      "label": "TypeScript",
+      "logo": "typescript.svg",
+      "cat": "core"
+    },
+    {
+      "key": "javascript",
+      "label": "JavaScript",
+      "logo": "javascript.svg",
+      "cat": "core"
+    },
+    {
+      "key": "html",
+      "label": "HTML",
+      "logo": "html5.svg",
+      "cat": "core"
+    },
+    {
+      "key": "css",
+      "label": "CSS",
+      "logo": "css3.svg",
+      "cat": "core"
+    },
+    {
+      "key": "docker",
+      "label": "Docker",
+      "logo": "docker.svg",
+      "cat": "cloud"
+    },
+    {
+      "key": "tailwind",
+      "label": "Tailwind CSS",
+      "logo": "tailwindcss.svg",
+      "cat": "ui"
+    },
+    {
+      "key": "framer",
+      "label": "Framer Motion",
+      "logo": "framer.svg",
+      "cat": "ui"
+    },
+    {
+      "key": "vite",
+      "label": "Vite",
+      "logo": "vite.svg",
+      "cat": "ui"
+    },
+    {
+      "key": "react",
+      "label": "React",
+      "logo": "react.svg",
+      "cat": "ui"
+    },
+    {
+      "key": "next.js",
+      "label": "Next.js",
+      "logo": "nextdotjs.svg",
+      "cat": "ui"
+    },
+    {
+      "key": "prisma",
+      "label": "Prisma",
+      "logo": "prisma.svg",
+      "cat": "backend"
+    },
+    {
+      "key": "express",
+      "label": "Express",
+      "logo": "express.svg",
+      "cat": "backend"
+    },
+    {
+      "key": "redis",
+      "label": "Redis",
+      "logo": "redis.svg",
+      "cat": "backend"
+    },
+    {
+      "key": "postgresql",
+      "label": "PostgreSQL",
+      "logo": "postgresql.svg",
+      "cat": "backend"
+    },
+    {
+      "key": "node",
+      "label": "Node.js",
+      "logo": "nodedotjs.svg",
+      "cat": "backend"
+    },
+    {
+      "key": "aws",
+      "label": "AWS",
+      "logo": "amazonaws.svg",
+      "cat": "cloud"
+    },
+    {
+      "key": "vercel",
+      "label": "Vercel",
+      "logo": "vercel.svg",
+      "cat": "cloud"
+    }
+  ]
+}

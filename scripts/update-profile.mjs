@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
 const TOKEN = process.env.GH_TOKEN || '';
@@ -7,9 +7,13 @@ const USER = 'arnav27-22';
 const ROOT = process.cwd();
 const README_PATH = join(ROOT, 'README.md');
 const DATA_PATH = join(ROOT, 'generated', 'github-data.json');
-const REGIONS = ['SYNC', 'STATS', 'STATS2', 'TECH', 'PROJECTS'];
-
+const TECH_DATA_PATH = join(ROOT, 'generated', 'tech.json');
+const AVATAR_PATH = join(ROOT, 'assets', 'avatar.png');
+const CONTRIB_PATH = join(ROOT, 'assets', 'contribution.svg');
+const TECH_DIR = join(ROOT, 'assets', 'tech');
+const REGIONS = ['SYNC', 'STATS', 'STATS2', 'TECH', 'TECH2', 'PROJECTS'];
 const mono = "'JetBrains Mono',Consolas,monospace";
+
 const C = {
   cyan: '#22d3ee', soft: '#7dd3fc', blue: '#60a5fa', purple: '#a78bfa',
   green: '#34d399', yellow: '#eab308',
@@ -17,19 +21,69 @@ const C = {
   a: '#f1f5f9', b: '#cbd5e1', c: '#a3b3c8', mute: '#6b7f96', dim: '#475569',
 };
 
-const SKILL = {
-  TypeScript: 'ts', JavaScript: 'js', HTML: 'html', CSS: 'css', Dockerfile: 'docker',
-  Python: 'python', Go: 'go', Shell: 'bash', Java: 'java', 'C++': 'cpp', C: 'c',
-  PHP: 'php', Ruby: 'ruby', Rust: 'rust', Swift: 'swift', Kotlin: 'kotlin', 'C#': 'cs',
-  Vue: 'vue', Svelte: 'svelte', Astro: 'astro', Dart: 'dart', Lua: 'lua',
-  Markdown: 'md', JSON: 'json', YAML: 'yaml', MDX: 'mdx', Solidity: 'solidity', Zig: 'zig',
-  Scala: 'scala', R: 'r', Elixir: 'elixir', Haskell: 'haskell', Nix: 'nix', Perl: 'perl',
-};
-
 const CURATED = {
   'arom-studio': 'Web design & development agency platform: marketing experience and admin dashboard in React 19 + Vite, backed by an Express 5 API with Prisma + PostgreSQL, Redis caching, S3 / Vercel Blob storage, email automation, JWT auth, document generation, analytics, CI/CD and Docker. Deployed on Vercel.',
   'Share-FIle': 'Secure file-sharing platform on Next.js 15 + React 19: password-protected links, expiration timers, custom aliases, AES-256 encryption, WebRTC peer-to-peer transfer, multi-cloud storage (S3 / R2 / B2) and QR download codes — glassmorphism UI with Framer Motion.',
 };
+
+const TECH_META = {
+  typescript: { label: 'TypeScript', logo: 'typescript.svg', cat: 'core' },
+  javascript: { label: 'JavaScript', logo: 'javascript.svg', cat: 'core' },
+  html: { label: 'HTML', logo: 'html5.svg', cat: 'core' },
+  css: { label: 'CSS', logo: 'css3.svg', cat: 'core' },
+  react: { label: 'React', logo: 'react.svg', cat: 'ui' },
+  'next.js': { label: 'Next.js', logo: 'nextdotjs.svg', cat: 'ui' },
+  vite: { label: 'Vite', logo: 'vite.svg', cat: 'ui' },
+  tailwind: { label: 'Tailwind CSS', logo: 'tailwindcss.svg', cat: 'ui' },
+  framer: { label: 'Framer Motion', logo: 'framer.svg', cat: 'ui' },
+  node: { label: 'Node.js', logo: 'nodedotjs.svg', cat: 'backend' },
+  express: { label: 'Express', logo: 'express.svg', cat: 'backend' },
+  prisma: { label: 'Prisma', logo: 'prisma.svg', cat: 'backend' },
+  postgresql: { label: 'PostgreSQL', logo: 'postgresql.svg', cat: 'backend' },
+  redis: { label: 'Redis', logo: 'redis.svg', cat: 'backend' },
+  aws: { label: 'AWS', logo: 'amazonaws.svg', cat: 'cloud' },
+  docker: { label: 'Docker', logo: 'docker.svg', cat: 'cloud' },
+  vercel: { label: 'Vercel', logo: 'vercel.svg', cat: 'cloud' },
+};
+const LANG_TO_TECH = { TypeScript: 'typescript', JavaScript: 'javascript', HTML: 'html', CSS: 'css', Dockerfile: 'docker', Python: 'python', Go: 'go', Shell: 'bash' };
+const DEP2TECH = [
+  [/^@prisma|^prisma$/, 'prisma'],
+  [/^@tailwindcss|^tailwindcss|^tailwind-merge$/, 'tailwind'],
+  [/^framer-motion$/, 'framer'],
+  [/^next$/, 'next.js'],
+  [/^vite$|^@vitejs/, 'vite'],
+  [/^react/, 'react'],
+  [/^express$|^@types\/express/, 'express'],
+  [/^ioredis$|^redis/, 'redis'],
+  [/^pg$|^@neondatabase/, 'postgresql'],
+  [/^@aws-sdk/, 'aws'],
+  [/^@vercel/, 'vercel'],
+  [/^nodemailer|^sharp$|^zod$|^qrcode$|^jsone?|^bcryptjs|^zustand$|^@tanstack|^recharts|lucide-|^gsap|^ws$|^vitest$|^uuid$/, 'node'],
+];
+const CAT_ORDER = ['core', 'ui', 'backend', 'cloud'];
+const CAT_LABEL = { core: 'LANGUAGES', ui: 'FRAMEWORKS & UI', backend: 'BACKEND & DATA', cloud: 'CLOUD & TOOLS' };
+
+function techFromDeps(pkg) {
+  const keys = new Set();
+  const deps = { ...(pkg?.dependencies || {}), ...(pkg?.devDependencies || {}) };
+  for (const [re, tech] of DEP2TECH) {
+    if (Object.keys(deps).some((d) => re.test(d))) keys.add(tech);
+  }
+  if (pkg?.dependencies?.typescript || pkg?.devDependencies?.typescript) keys.add('typescript');
+  return [...keys];
+}
+
+async function fetchRepoDeps(name) {
+  for (const branch of ['main', 'master']) {
+    try {
+      const res = await fetch(`https://raw.githubusercontent.com/${USER}/${name}/${branch}/package.json`, { headers: HEADERS });
+      if (!res.ok) continue;
+      const pkg = await res.json();
+      return techFromDeps(pkg);
+    } catch { /* try next branch */ }
+  }
+  return [];
+}
 
 const HEADERS = {
   Accept: 'application/vnd.github+json',
@@ -209,14 +263,116 @@ function renderSync(stats, date, commits, lastPush) {
 <span style="display:block;text-align:center;margin-top:8px;">${badges.join('&nbsp; ')}</span>`;
 }
 
-function renderTech(topLangs) {
-  const icons = topLangs.map((l) => SKILL[l]).filter(Boolean).slice(0, 8);
-  const iconsRow = icons.length
-    ? `<img src="https://skillicons.dev/icons?i=${icons.join(',')}&theme=dark" alt="${topLangs.slice(0, 6).join(', ')}" height="34">`
-    : '';
-  return `<span style="display:block;text-align:center;color:${C.faint ?? C.dim};font-size:11px;font-family:${mono};">top languages by bytes → <span style="color:${C.mute};">${topLangs.join(' · ')}</span> · auto-detected</span>
-      <br>
-      ${iconsRow}`;
+function localLogos() {
+  try { return new Set(readdirSync(TECH_DIR).filter((f) => f.endsWith('.svg'))); } catch { return new Set(); }
+}
+
+const LOGOS = localLogos();
+
+function techImg(key, height) {
+  const m = TECH_META[key];
+  if (!m || !LOGOS.has(m.logo)) return null;
+  return `<img src="./assets/tech/${m.logo}" alt="${m.label}" title="${m.label}" height="${height}">`;
+}
+
+function renderPills(techKeys) {
+  const pills = techKeys.slice(0, 10).map((k) => {
+    const m = TECH_META[k];
+    if (!m || !LOGOS.has(m.logo)) return null;
+    return `<span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/${m.logo}" width="15" height="15" alt="${m.label}" style="vertical-align:-2px;"> <span style="font-size:12px;color:${m.cat === 'core' ? C.soft : C.b};">${m.label}</span></span>`;
+  }).filter(Boolean);
+  return pills.join('\n      ');
+}
+
+function renderTechTable(techKeys) {
+  const groups = CAT_ORDER.map((cat) => {
+    const techs = techKeys.filter((k) => TECH_META[k]?.cat === cat);
+    const imgs = techs.map((k) => techImg(k, 26)).filter(Boolean);
+    if (!imgs.length) return null;
+    return [
+      `<tr>`,
+      `  <td style="width:22%;text-align:left;font-size:11px;color:#6b7f96;letter-spacing:2px;vertical-align:middle;">${CAT_LABEL[cat]}</td>`,
+      `  <td style="text-align:left;">${imgs.join('&nbsp;&nbsp; ')}</td>`,
+      `</tr>`,
+      ...(techs.length ? [`<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#475569;">${techs.map((k) => TECH_META[k].label).join(' · ')}</td></tr>`] : []),
+    ].join('\n');
+  }).filter(Boolean);
+  const note = `<span style="display:block;text-align:center;color:${C.dim};font-size:11px;font-family:${mono};padding-top:12px;">auto-detected from repository languages &amp; dependency files</span>`;
+  return `<table role="presentation" width="100%">\n${groups.join('\n')}\n</table>\n<br>\n${note}`;
+}
+
+async function renderContributionSvg() {
+  const res = await fetch(`https://github.com/users/${USER}/contributions`, { headers: { 'User-Agent': 'profile-sync' } });
+  if (!res.ok) throw new Error(`contributions fetch -> ${res.status}`);
+  const html = await res.text();
+  const cells = [...html.matchAll(/data-date="(\d{4}-\d{2}-\d{2})"[^>]*data-level="([0-4])"/g)]
+    .map((m) => ({ date: m[1], level: Number(m[2]) }));
+  if (!cells.length) throw new Error('contributions parse failed');
+  const totalMatch = html.match(/([\d,]+)\s*contributions?\s*in the last year/);
+  const total = totalMatch ? Number(totalMatch[1].replace(/,/g, '')) : null;
+  const dates = cells.map((c) => c.date).sort();
+  if (!dates.length) throw new Error('no contribution dates');
+  const first = new Date(dates[0]);
+  const PAL = { 0: '#141c27', 1: '#0e4429', 2: '#006d32', 3: '#26a641', 4: '#39d353' };
+  const CELL = 9, PITCH = 12, X0 = 40, Y0 = 34;
+  const maxLvl = Math.max(...cells.map((c) => c.level));
+  const months = new Map();
+  let maxWeek = 0;
+  const rects = cells.map((c) => {
+    const d = new Date(c.date);
+    const wi = Math.floor((d - first) / 86400000 / 7);
+    const ri = Math.floor(((d - first) / 86400000) % 7);
+    maxWeek = Math.max(maxWeek, wi);
+    if (d.getDate() <= 2 && !months.has(wi)) months.set(wi, d.toLocaleString('en', { month: 'short' }));
+    return { x: X0 + wi * PITCH, y: Y0 + ri * PITCH, fill: PAL[c.level], level: c.level };
+  });
+  const W = X0 + (maxWeek + 1) * PITCH + 16;
+  const H = Y0 + 7 * PITCH + 46;
+  const monthsHtml = [...months.entries()].map(([wi, m]) => `<text x="${X0 + wi * PITCH}" y="${Y0 - 8}" font-family="'JetBrains Mono',Consolas,monospace" font-size="9" fill="#6b7f96">${m}</text>`).join('\n');
+  const rectsHtml = rects.map((r) =>
+    `<rect x="${r.x}" y="${r.y}" width="${CELL}" height="${CELL}" rx="2.5" fill="${r.fill}"${r.level === maxLvl && maxLvl > 0 ? ' class="hot"' : ''}/>`).join('\n');
+  const dayLbl = ['sun', 'mon', 'wed', 'fri'].map((l, i) => `<text x="14" y="${Y0 + [0, 1, 3, 5][i] * PITCH + 7}" font-family="'JetBrains Mono',Consolas,monospace" font-size="9" fill="#475569">${l}</text>`).join('\n');
+  const cap = total !== null ? `${total} contributions · ${dates[0]} → ${dates[dates.length - 1]}` : `real calendar data · ${dates[0]} → ${dates[dates.length - 1]}`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="cg1 cg2">
+  <title id="cg1">Contribution activity — arnav27-22</title>
+  <desc id="cg2">Real GitHub contribution calendar for ARNAV PAGARE (@arnav27-22): ${cap}. Regenerated daily by GitHub Actions.</desc>
+  <style>
+    @keyframes cgpulse { 0%,100% { opacity: 1 } 50% { opacity: .55 } }
+    .hot { animation: cgpulse 3.4s ease-in-out infinite }
+    @keyframes cgblink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
+    .blink { animation: cgblink 1.3s steps(1) infinite }
+  </style>
+  <rect width="${W}" height="${H}" rx="14" fill="#0b1117"/>
+  <text x="${X0}" y="22" font-family="'JetBrains Mono',Consolas,monospace" font-size="12" font-weight="700" fill="#22d3ee" letter-spacing="2">CONTRIBUTION CALENDAR · ${cap}</text>
+  ${dayLbl}
+  ${monthsHtml}
+  ${rectsHtml}
+  <text x="${W / 2}" y="${H - 12}" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="10.5" fill="#64748b">real data · re-generated by github actions<tspan class="blink" fill="#22d3ee">▌</tspan></text>
+</svg>`;
+}
+
+async function writeIfChanged(path, content) {
+  const next = typeof content === 'string' ? Buffer.from(content, 'utf8') : content;
+  let same = false;
+  try { same = existsSync(path) && readFileSync(path).equals(next); } catch { /* missing */ }
+  if (!same) writeFileSync(path, next);
+  return !same;
+}
+
+async function syncAvatar(avatarUrl) {
+  const sources = [avatarUrl, `https://github.com/${USER}.png?size=460`];
+  for (const url of sources) {
+    try {
+      const res = await fetch(url, { headers: { 'User-Agent': 'profile-sync' } });
+      if (!res.ok) continue;
+      const buf = Buffer.from(await res.arrayBuffer());
+      if (buf.length > 8 && buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4e && buf[3] === 0x47) {
+        return await writeIfChanged(AVATAR_PATH, buf);
+      }
+    } catch { /* try next source */ }
+  }
+  console.warn('avatar: no PNG source available — keeping current avatar');
+  return false;
 }
 
 function setRegion(md, name, content) {
@@ -322,6 +478,27 @@ async function main() {
   const commits = await fetchCommits();
   const today = new Date().toISOString().slice(0, 10);
 
+  const repoDeps = {};
+  const depTechs = new Set();
+  for (const r of repos) {
+    if (r.fork || r.archived || r.name === USER || r.size === 0) continue;
+    const deps = await fetchRepoDeps(r.name);
+    repoDeps[r.name] = deps;
+    deps.forEach((t) => depTechs.add(t));
+  }
+  const langTechs = topLangs.map((l) => LANG_TO_TECH[l]).filter(Boolean);
+  const depList = [...depTechs];
+  const techKeys = [...new Set([
+    ...langTechs,
+    ...CAT_ORDER.flatMap((c) => depList.filter((k) => TECH_META[k]?.cat === c)),
+  ])];
+  const techData = {
+    generatedAt: new Date().toISOString(),
+    topLangs,
+    repos: repoDeps,
+    stack: techKeys.map((k) => ({ key: k, label: TECH_META[k]?.label ?? k, logo: TECH_META[k]?.logo ?? null, cat: TECH_META[k]?.cat ?? 'other' })),
+  };
+
   const data = {
     generatedAt: new Date().toISOString(),
     source: 'github-api',
@@ -345,7 +522,8 @@ async function main() {
     SYNC: renderSync(data.stats, today, commits, lastPush),
     STATS: renderStats(data.stats),
     STATS2: renderPanel(data.stats, today),
-    TECH: renderTech(topLangs),
+    TECH: renderTechTable(techKeys),
+    TECH2: renderPills(techKeys),
     PROJECTS: renderProjects(selected, rest, empties),
   };
 
@@ -367,7 +545,27 @@ async function main() {
   };
   const dataChanged = originalData === null || stable(JSON.parse(originalData)) !== stable(data);
 
-  if (!mdChanged && !dataChanged) {
+  let techChanged = false;
+  try {
+    const prevTech = (() => { try { return JSON.parse(readFileSync(TECH_DATA_PATH, 'utf8')); } catch { return null; } })();
+    techChanged = prevTech === null || stable(prevTech) !== stable(techData);
+    if (techChanged) {
+      mkdirSync(join(ROOT, 'generated'), { recursive: true });
+      writeFileSync(TECH_DATA_PATH, JSON.stringify(techData, null, 2), 'utf8');
+    }
+  } catch (err) {
+    console.warn('tech.json: kept previous —', err.message);
+  }
+
+  let contribChanged = false;
+  try {
+    contribChanged = await writeIfChanged(CONTRIB_PATH, await renderContributionSvg());
+  } catch (err) {
+    console.warn('contribution.svg: kept previous asset —', err.message);
+  }
+  const avatarChanged = await syncAvatar(user.avatar_url);
+
+  if (!mdChanged && !dataChanged && !techChanged && !contribChanged && !avatarChanged) {
     console.log('no changes to commit');
     return;
   }
@@ -376,7 +574,7 @@ async function main() {
     mkdirSync(join(ROOT, 'generated'), { recursive: true });
     writeFileSync(DATA_PATH, JSON.stringify(data, null, 2), 'utf8');
   }
-  console.log(`profile data synced (readme=${mdChanged}, data=${dataChanged}) · featured=${selected.length} · stats repos=${data.stats.repos} stars=${data.stats.stars}`);
+  console.log(`profile data synced (readme=${mdChanged}, data=${dataChanged}, tech=${techChanged}, contrib=${contribChanged}, avatar=${avatarChanged}) · featured=${selected.length} · stats repos=${data.stats.repos} stars=${data.stats.stars}`);
 }
 
 main().catch((err) => {

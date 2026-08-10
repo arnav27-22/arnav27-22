@@ -22,7 +22,7 @@
       <table role="presentation" width="100%">
         <tr>
           <td style="vertical-align:middle;width:96px;">
-            <img src="https://avatars.githubusercontent.com/u/238826954?v=4" alt="GitHub avatar of ARNAV PAGARE" width="84" style="border-radius:50%;border:2px solid #22d3ee;">
+            <img src="./assets/avatar.png" alt="GitHub avatar of ARNAV PAGARE" width="84" style="border-radius:50%;border:2px solid #22d3ee;">
           </td>
           <td style="vertical-align:middle;padding-left:14px;">
             <span style="font-size:26px;font-weight:700;color:#f1f5f9;letter-spacing:1px;">ARNAV PAGARE</span>
@@ -38,11 +38,20 @@
         </tr>
       </table>
       <br>
-      <span style="display:inline-block;background-color:#101a28;border:1px solid #22d3ee;border-radius:999px;padding:4px 12px;font-size:12px;color:#7dd3fc;margin:2px 3px;">TypeScript</span>
-      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;font-size:12px;color:#cbd5e1;margin:2px 3px;">React</span>
-      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;font-size:12px;color:#cbd5e1;margin:2px 3px;">Next.js</span>
-      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;font-size:12px;color:#cbd5e1;margin:2px 3px;">Tailwind CSS</span>
-      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;font-size:12px;color:#cbd5e1;margin:2px 3px;">Node.js</span>
+      <!-- AUTO:TECH2_START -->
+
+<span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/typescript.svg" width="15" height="15" alt="TypeScript" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">TypeScript</span></span>
+      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/javascript.svg" width="15" height="15" alt="JavaScript" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">JavaScript</span></span>
+      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/html5.svg" width="15" height="15" alt="HTML" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">HTML</span></span>
+      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/css3.svg" width="15" height="15" alt="CSS" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">CSS</span></span>
+      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/docker.svg" width="15" height="15" alt="Docker" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">Docker</span></span>
+      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/tailwindcss.svg" width="15" height="15" alt="Tailwind CSS" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">Tailwind CSS</span></span>
+      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/framer.svg" width="15" height="15" alt="Framer Motion" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">Framer Motion</span></span>
+      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/vite.svg" width="15" height="15" alt="Vite" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">Vite</span></span>
+      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/react.svg" width="15" height="15" alt="React" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">React</span></span>
+      <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/nextdotjs.svg" width="15" height="15" alt="Next.js" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">Next.js</span></span>
+
+<!-- AUTO:TECH2_END -->
     </td>
     <td style="width:32%;padding-left:14px;vertical-align:middle;">
       <table role="presentation" width="100%">
@@ -170,30 +179,32 @@
     <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:20px 24px;text-align:center;">
       <span style="font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ tech — measured from public repositories</span>
       <br><br>
-      <table role="presentation" width="100%">
-        <tr>
-          <td style="width:22%;text-align:left;font-size:11px;color:#6b7f96;letter-spacing:2px;vertical-align:middle;">LANGUAGES</td>
-          <td style="text-align:left;"><img src="https://skillicons.dev/icons?i=ts,js,html,css&theme=dark" alt="TypeScript, JavaScript, HTML, CSS" height="34"></td>
-        </tr>
-        <tr>
-          <td style="padding-top:12px;text-align:left;font-size:11px;color:#6b7f96;letter-spacing:2px;vertical-align:middle;">FRAMEWORKS &amp; UI</td>
-          <td style="padding-top:12px;text-align:left;"><img src="https://skillicons.dev/icons?i=react,vite,nextjs,tailwind,framer&theme=dark" alt="React, Vite, Next.js, Tailwind CSS, Framer Motion" height="34"></td>
-        </tr>
-        <tr>
-          <td style="padding-top:12px;text-align:left;font-size:11px;color:#6b7f96;letter-spacing:2px;vertical-align:middle;">BACKEND &amp; DATA</td>
-          <td style="padding-top:12px;text-align:left;"><img src="https://skillicons.dev/icons?i=nodejs,express,prisma,postgres,redis&theme=dark" alt="Node.js, Express, Prisma, PostgreSQL, Redis" height="34"></td>
-        </tr>
-        <tr>
-          <td style="padding-top:12px;text-align:left;font-size:11px;color:#6b7f96;letter-spacing:2px;vertical-align:middle;">CLOUD &amp; TOOLS</td>
-          <td style="padding-top:12px;text-align:left;"><img src="https://skillicons.dev/icons?i=vercel,aws,docker,git&theme=dark" alt="Vercel, AWS, Docker, Git" height="34"></td>
-        </tr>
-      </table>
-      <br>
       <!-- AUTO:TECH_START -->
 
-<span style="display:block;text-align:center;color:#475569;font-size:11px;font-family:'JetBrains Mono',Consolas,monospace;">top languages by bytes → <span style="color:#6b7f96;">TypeScript · JavaScript · HTML · CSS · Dockerfile</span> · auto-detected</span>
-      <br>
-      <img src="https://skillicons.dev/icons?i=ts,js,html,css,docker&theme=dark" alt="TypeScript, JavaScript, HTML, CSS, Dockerfile" height="34">
+<table role="presentation" width="100%">
+<tr>
+  <td style="width:22%;text-align:left;font-size:11px;color:#6b7f96;letter-spacing:2px;vertical-align:middle;">LANGUAGES</td>
+  <td style="text-align:left;"><img src="./assets/tech/typescript.svg" alt="TypeScript" title="TypeScript" height="26">&nbsp;&nbsp; <img src="./assets/tech/javascript.svg" alt="JavaScript" title="JavaScript" height="26">&nbsp;&nbsp; <img src="./assets/tech/html5.svg" alt="HTML" title="HTML" height="26">&nbsp;&nbsp; <img src="./assets/tech/css3.svg" alt="CSS" title="CSS" height="26"></td>
+</tr>
+<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#475569;">TypeScript · JavaScript · HTML · CSS</td></tr>
+<tr>
+  <td style="width:22%;text-align:left;font-size:11px;color:#6b7f96;letter-spacing:2px;vertical-align:middle;">FRAMEWORKS & UI</td>
+  <td style="text-align:left;"><img src="./assets/tech/tailwindcss.svg" alt="Tailwind CSS" title="Tailwind CSS" height="26">&nbsp;&nbsp; <img src="./assets/tech/framer.svg" alt="Framer Motion" title="Framer Motion" height="26">&nbsp;&nbsp; <img src="./assets/tech/vite.svg" alt="Vite" title="Vite" height="26">&nbsp;&nbsp; <img src="./assets/tech/react.svg" alt="React" title="React" height="26">&nbsp;&nbsp; <img src="./assets/tech/nextdotjs.svg" alt="Next.js" title="Next.js" height="26"></td>
+</tr>
+<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#475569;">Tailwind CSS · Framer Motion · Vite · React · Next.js</td></tr>
+<tr>
+  <td style="width:22%;text-align:left;font-size:11px;color:#6b7f96;letter-spacing:2px;vertical-align:middle;">BACKEND & DATA</td>
+  <td style="text-align:left;"><img src="./assets/tech/prisma.svg" alt="Prisma" title="Prisma" height="26">&nbsp;&nbsp; <img src="./assets/tech/express.svg" alt="Express" title="Express" height="26">&nbsp;&nbsp; <img src="./assets/tech/redis.svg" alt="Redis" title="Redis" height="26">&nbsp;&nbsp; <img src="./assets/tech/postgresql.svg" alt="PostgreSQL" title="PostgreSQL" height="26">&nbsp;&nbsp; <img src="./assets/tech/nodedotjs.svg" alt="Node.js" title="Node.js" height="26"></td>
+</tr>
+<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#475569;">Prisma · Express · Redis · PostgreSQL · Node.js</td></tr>
+<tr>
+  <td style="width:22%;text-align:left;font-size:11px;color:#6b7f96;letter-spacing:2px;vertical-align:middle;">CLOUD & TOOLS</td>
+  <td style="text-align:left;"><img src="./assets/tech/docker.svg" alt="Docker" title="Docker" height="26">&nbsp;&nbsp; <img src="./assets/tech/amazonaws.svg" alt="AWS" title="AWS" height="26">&nbsp;&nbsp; <img src="./assets/tech/vercel.svg" alt="Vercel" title="Vercel" height="26"></td>
+</tr>
+<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#475569;">Docker · AWS · Vercel</td></tr>
+</table>
+<br>
+<span style="display:block;text-align:center;color:#475569;font-size:11px;font-family:'JetBrains Mono',Consolas,monospace;padding-top:12px;">auto-detected from repository languages &amp; dependency files</span>
 
 <!-- AUTO:TECH_END -->
     </td>
@@ -298,8 +309,10 @@
   <tr>
     <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:18px 14px;text-align:center;">
       <span style="display:block;text-align:center;padding-bottom:10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ contribution_graph</span>
+      <img src="./assets/contribution.svg" alt="Real GitHub contribution calendar for ARNAV PAGARE (@arnav27-22) — 276 contributions in the last year, regenerated daily by GitHub Actions" width="100%" style="border-radius:12px;">
+      <br><br>
       <img src="./assets/contribution-snake.svg" alt="Contribution snake for ARNAV PAGARE (@arnav27-22) — generated nightly from real GitHub contribution data by GitHub Actions" width="100%" style="border-radius:12px;">
-      <span style="display:block;text-align:center;color:#3b4c63;font-size:11px;margin-top:8px;">real contribution data · re-generated every day by <span style="color:#64748b;">.github/workflows/snake.yml</span></span>
+      <span style="display:block;text-align:center;color:#3b4c63;font-size:11px;margin-top:8px;">real contribution data · re-generated every day by <span style="color:#64748b;">.github/workflows/snake.yml</span> and <span style="color:#64748b;">update-profile.yml</span></span>
     </td>
   </tr>
 </table>

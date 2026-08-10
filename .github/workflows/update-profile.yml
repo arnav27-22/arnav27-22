@@ -2,7 +2,9 @@ name: update profile data
 
 on:
   schedule:
-    - cron: '17 2 * * *'
+    - cron: '*/5 * * * *'
+  repository_dispatch:
+    types: [profile-sync]
   workflow_dispatch:
 
 permissions:
@@ -30,4 +32,22 @@ jobs:
         with:
           commit_message: 'chore(profile): sync GitHub data'
           commit_author: 'arnav27-22 <238826954+arnav27-22@users.noreply.github.com>'
-          file_pattern: README.md generated/
+          file_pattern: README.md generated/ assets/contribution.svg
+
+  avatar:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download current avatar (convert to PNG only when changed)
+        shell: powershell
+        run: ./scripts/update-avatar.ps1
+
+      - name: Commit avatar (only when it actually changed)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(profile): update avatar'
+          commit_author: 'arnav27-22 <238826954+arnav27-22@users.noreply.github.com>'
+          file_pattern: assets/avatar.png
