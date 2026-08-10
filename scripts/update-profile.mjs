@@ -176,8 +176,7 @@ function card(p, isTop) {
         <br><br>
         <span style="font-size:11.5px;color:${C.mute};">${techs}</span>
         <br><br>
-        <a href="${p.url}" style="display:inline-block;background-color:${isTop ? C.cyan : '#21262d'};color:${isTop ? '#062018' : C.b};text-decoration:none;font-size:12px;font-weight:700;border-radius:8px;padding:7px 14px;">VIEW REPOSITORY ↗</a>
-        ${p.homepage ? `&nbsp;
+        <a href="${p.url}" style="display:inline-block;background-color:${isTop ? C.cyan : '#21262d'};color:${isTop ? '#062018' : C.b};text-decoration:none;font-size:12px;font-weight:700;border-radius:8px;padding:7px 14px;">VIEW REPOSITORY ↗</a>${p.homepage ? `
         <a href="${p.homepage}" style="display:inline-block;background-color:#21262d;color:#dbe4ee;text-decoration:none;font-size:12px;font-weight:600;border-radius:8px;padding:7px 14px;">LIVE DEMO ↗</a>` : ''}
         <br><br>
         <span style="font-size:11px;color:${C.dim};font-family:${mono};">${meta.join(' · ')}</span>
@@ -377,7 +376,7 @@ async function syncAvatar(avatarUrl) {
 
 function setRegion(md, name, content) {
   const pattern = new RegExp(`<!-- AUTO:${name}_START -->[\\s\\S]*?<!-- AUTO:${name}_END -->`, 'g');
-  const next = `<!-- AUTO:${name}_START -->\n\n${content}\n\n<!-- AUTO:${name}_END -->`;
+  const next = `<!-- AUTO:${name}_START -->\n${content.trim()}\n<!-- AUTO:${name}_END -->`;
   if (!pattern.test(md)) throw new Error(`region not found: ${name}`);
   return md.replace(pattern, next);
 }
@@ -391,6 +390,9 @@ function validateSnippet(snippet, label) {
   const first = snippet.split('\n').find((l) => l.trim());
   if (!first || !/^<(table|div|tbody|thead|p)/.test(first)) {
     throw new Error(`${label}: first line must be a block-level tag to survive GitHub's HTML blocks: ${String(first).slice(0, 60)}`);
+  }
+  if (snippet.split('\n').slice(0, -1).some((l) => !l.trim())) {
+    throw new Error(`${label}: region content must not contain blank lines (they break GitHub's HTML blocks)`);
   }
 }
 

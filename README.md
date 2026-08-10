@@ -1,21 +1,13 @@
 <div align="center" style="background-color:#0b1117;border:1px solid #1c2733;border-radius:16px;padding:24px 18px;color:#dbe4ee;">
-
 <!-- ======================= 1 · TERMINAL HERO ======================= -->
-
 <a href="https://github.com/arnav27-22">
   <img src="./assets/hero-terminal.svg" alt="Animated terminal hero — ARNAV PAGARE (@arnav27-22). whoami: arnav27-22 · echo $NAME: ARNAV PAGARE · npx focus: ai · web · software · automation · git status: building" width="100%" style="border-radius:14px;border:1px solid #1c2733;">
 </a>
-
 <br>
-
 <img src="./assets/profile-banner.svg" alt="Animated profile banner — ARNAV PAGARE @arnav27-22 · web applications · developer tools · AI exploration. Real GitHub avatar with rotating ring and light sweep." width="100%" style="border-radius:14px;border:1px solid #1c2733;">
-
 <span style="color:#7dd3fc;font-family:'JetBrains Mono',Consolas,monospace;font-size:13px;"><strong style="color:#e2e8f0;">ARNAV PAGARE</strong> — @arnav27-22 · web applications · developer tools · AI exploration</span>
-
 <br><br>
-
 <!-- ======================= 2 · PROFILE CARD ======================= -->
-
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
     <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:22px 24px;width:68%;">
@@ -39,7 +31,6 @@
       </table>
       <br>
       <!-- AUTO:TECH2_START -->
-
 <div><span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/typescript.svg" width="15" height="15" alt="TypeScript" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">TypeScript</span></span>
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/javascript.svg" width="15" height="15" alt="JavaScript" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">JavaScript</span></span>
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/html5.svg" width="15" height="15" alt="HTML" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">HTML</span></span>
@@ -50,7 +41,6 @@
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/vite.svg" width="15" height="15" alt="Vite" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">Vite</span></span>
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/react.svg" width="15" height="15" alt="React" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">React</span></span>
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/nextdotjs.svg" width="15" height="15" alt="Next.js" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">Next.js</span></span></div>
-
 <!-- AUTO:TECH2_END -->
     </td>
     <td style="width:32%;padding-left:14px;vertical-align:middle;">
@@ -72,13 +62,9 @@
     </td>
   </tr>
 </table>
-
 <br>
-
 <!-- ======================= 3 · PROFILE SIGNAL (AUTO-GENERATED) ======================= -->
-
 <!-- AUTO:STATS_START -->
-
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
     <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:18px 10px;text-align:center;width:19%;">
@@ -107,24 +93,16 @@
     </td>
   </tr>
 </table>
-
 <!-- AUTO:STATS_END -->
-
 <!-- AUTO:SYNC_START -->
-
 <div style="text-align:center;color:#6b7f96;font-size:12px;font-family:'JetBrains Mono',Consolas,monospace;"><span style="color:#34d399;">●</span> PROFILE SYNCED · last sync <span style="color:#7dd3fc;">2026-08-10</span> UTC · commits <span style="color:#7dd3fc;">275</span> · latest_push <span style="color:#7dd3fc;">arom-studio · 2026-07-29</span></div>
 <div style="text-align:center;margin-top:8px;"><img src="https://github.com/arnav27-22/arnav27-22/actions/workflows/update-profile.yml/badge.svg" alt="Profile sync workflow status" height="20">&nbsp; <img src="https://github.com/arnav27-22/arnav27-22/actions/workflows/snake.yml/badge.svg" alt="Contribution snake workflow status" height="20"></div>
-
 <!-- AUTO:SYNC_END -->
-
 <br>
 <img src="./assets/section-divider.svg" alt="Section divider — traveling light" width="60%" style="max-width:420px;">
 <br>
-
 <br>
-
 <!-- ======================= 4 · ABOUT ======================= -->
-
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
     <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:22px 24px;">
@@ -146,11 +124,8 @@
     </td>
   </tr>
 </table>
-
 <br>
-
 <!-- ======================= 5 · CURRENT FOCUS ======================= -->
-
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
     <td style="background-color:#0c1219;border:1px solid #223148;border-radius:14px;padding:20px 24px;font-family:'JetBrains Mono',Consolas,monospace;">
@@ -169,18 +144,14 @@
     </td>
   </tr>
 </table>
-
 <br>
-
 <!-- ======================= 6 · TECH STACK ======================= -->
-
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
     <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:20px 24px;text-align:center;">
       <span style="font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ tech — measured from public repositories</span>
       <br><br>
       <!-- AUTO:TECH_START -->
-
 <table role="presentation" width="100%">
 <tr>
   <td style="width:22%;text-align:left;font-size:11px;color:#6b7f96;letter-spacing:2px;vertical-align:middle;">LANGUAGES</td>
@@ -205,18 +176,13 @@
 </table>
 <br>
 <span style="display:block;text-align:center;color:#475569;font-size:11px;font-family:'JetBrains Mono',Consolas,monospace;padding-top:12px;">auto-detected from repository languages &amp; dependency files</span>
-
 <!-- AUTO:TECH_END -->
     </td>
   </tr>
 </table>
-
 <br>
-
 <!-- ======================= 7 · FEATURED PROJECTS (AUTO-SELECTED) ======================= -->
-
 <!-- AUTO:PROJECTS_START -->
-
 <div style="text-align:center;padding-bottom:10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ featured_projects</div>
 <br>
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
@@ -236,7 +202,6 @@
         <span style="font-size:11.5px;color:#6b7f96;">TypeScript · JavaScript · HTML · CSS</span>
         <br><br>
         <a href="https://github.com/arnav27-22/arom-studio" style="display:inline-block;background-color:#22d3ee;color:#062018;text-decoration:none;font-size:12px;font-weight:700;border-radius:8px;padding:7px 14px;">VIEW REPOSITORY ↗</a>
-        &nbsp;
         <a href="https://arom-studio.vercel.app" style="display:inline-block;background-color:#21262d;color:#dbe4ee;text-decoration:none;font-size:12px;font-weight:600;border-radius:8px;padding:7px 14px;">LIVE DEMO ↗</a>
         <br><br>
         <span style="font-size:11px;color:#475569;font-family:'JetBrains Mono',Consolas,monospace;">1 ⭐ · 2026-07-29 · 18.2 MB</span>
@@ -260,7 +225,6 @@
         <span style="font-size:11.5px;color:#6b7f96;">TypeScript · JavaScript · HTML · CSS</span>
         <br><br>
         <a href="https://github.com/arnav27-22/Share-FIle" style="display:inline-block;background-color:#21262d;color:#cbd5e1;text-decoration:none;font-size:12px;font-weight:700;border-radius:8px;padding:7px 14px;">VIEW REPOSITORY ↗</a>
-        
         <br><br>
         <span style="font-size:11px;color:#475569;font-family:'JetBrains Mono',Consolas,monospace;">2026-06-29 · 66 KB</span>
       </td>
@@ -276,14 +240,9 @@
 <a href="https://github.com/arnav27-22/YT-Download" style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:5px 14px;font-size:12px;color:#cbd5e1;text-decoration:none;margin:3px;">YT-Download <span style="color:#6b7f96;">(empty)</span></a>
 <a href="https://github.com/arnav27-22/Om" style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:5px 14px;font-size:12px;color:#cbd5e1;text-decoration:none;margin:3px;">Om <span style="color:#6b7f96;">(empty)</span></a>
 <br>
-
-
 <!-- AUTO:PROJECTS_END -->
-
 <br>
-
 <!-- ======================= 8 · DEVELOPMENT ACTIVITY ======================= -->
-
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
     <td style="background-color:#0c1219;border:1px solid #223148;border-radius:14px;padding:20px 24px;font-family:'JetBrains Mono',Consolas,monospace;">
@@ -300,11 +259,8 @@
     </td>
   </tr>
 </table>
-
 <br>
-
 <!-- ======================= 9 · CONTRIBUTION ANIMATION ======================= -->
-
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
     <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:18px 14px;text-align:center;">
@@ -316,11 +272,8 @@
     </td>
   </tr>
 </table>
-
 <br>
-
 <!-- ======================= 10 · GITHUB STATISTICS ======================= -->
-
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
     <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:18px 22px;text-align:center;vertical-align:middle;width:60%;">
@@ -330,7 +283,6 @@
     <td style="width:2%;"></td>
     <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:18px 22px;vertical-align:middle;width:38%;">
       <!-- AUTO:STATS2_START -->
-
 <div style="font-size:13px;color:#cbd5e1;line-height:2;font-family:'JetBrains Mono',Consolas,monospace;">
         repositories&nbsp;&nbsp;&nbsp;<span style="color:#7dd3fc;">6</span><br>
         stars&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7dd3fc;">1</span><br>
@@ -339,16 +291,12 @@
       </div>
       <br><br>
       <span style="font-size:10.5px;color:#475569;">auto-synced <span style="color:#6b7f96;">2026-08-10</span> · UTC · daily · github actions</span>
-
 <!-- AUTO:STATS2_END -->
     </td>
   </tr>
 </table>
-
 <br>
-
 <!-- ======================= 11 · DEVELOPMENT PHILOSOPHY ======================= -->
-
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
     <td style="text-align:center;padding:6px 0;">
@@ -358,11 +306,8 @@
     </td>
   </tr>
 </table>
-
 <br>
-
 <!-- ======================= 13 · CONNECT ======================= -->
-
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
     <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:18px 24px;text-align:center;">
@@ -373,14 +318,9 @@
     </td>
   </tr>
 </table>
-
 <br>
-
 <img src="./assets/section-divider.svg" alt="Section divider — traveling light" width="60%" style="max-width:420px;">
 <br>
-
 <!-- ======================= 14 · FOOTER ======================= -->
-
 <img src="./assets/footer.svg" alt="Footer — ARNAV PAGARE @arnav27-22. Thanks for exploring. github.com/arnav27-22" width="100%" style="border-radius:12px;">
-
 </div>
