@@ -112,7 +112,7 @@
 
 <!-- AUTO:SYNC_START -->
 
-<div style="text-align:center;color:#6b7f96;font-size:12px;font-family:'JetBrains Mono',Consolas,monospace;"><span style="color:#34d399;">●</span> PROFILE SYNCED · last sync <span style="color:#7dd3fc;">2026-08-10</span> UTC · latest_push <span style="color:#7dd3fc;">arom-studio · 2026-07-29</span></div>
+<div style="text-align:center;color:#6b7f96;font-size:12px;font-family:'JetBrains Mono',Consolas,monospace;"><span style="color:#34d399;">●</span> PROFILE SYNCED · last sync <span style="color:#7dd3fc;">2026-08-10</span> UTC · commits <span style="color:#7dd3fc;">275</span> · latest_push <span style="color:#7dd3fc;">arom-studio · 2026-07-29</span></div>
 <div style="text-align:center;margin-top:8px;"><img src="https://github.com/arnav27-22/arnav27-22/actions/workflows/update-profile.yml/badge.svg" alt="Profile sync workflow status" height="20">&nbsp; <img src="https://github.com/arnav27-22/arnav27-22/actions/workflows/snake.yml/badge.svg" alt="Contribution snake workflow status" height="20"></div>
 
 <!-- AUTO:SYNC_END -->
