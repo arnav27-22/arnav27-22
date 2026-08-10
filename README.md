@@ -1,36 +1,48 @@
-<div align="center" style="background-color:#0b1117;border:1px solid #1c2733;border-radius:16px;padding:24px 18px;color:#dbe4ee;">
-<!-- ======================= 1 · TERMINAL HERO ======================= -->
+<!-- ================================================================ -->
+<!--  AUTO-GENERATED FILE · UI curated · data synced by github actions -->
+<!--  sections: hero · profile card · profile signal · tech stack      -->
+<!--  featured projects · contribution activity · live projects        -->
+<!--  connect · footer                                                 -->
+<!-- ================================================================ -->
+<div align="center">
+<!-- 1 · HERO -->
+<table role="presentation" width="100%" style="max-width:860px;margin:0 auto;">
+<tr>
+<td align="center" style="padding:0 0 6px 0;">
 <a href="https://github.com/arnav27-22">
-  <img src="./assets/hero-terminal.svg" alt="Animated terminal hero — ARNAV PAGARE (@arnav27-22). whoami: arnav27-22 · echo $NAME: ARNAV PAGARE · npx focus: ai · web · software · automation · git status: building" width="100%" style="border-radius:14px;border:1px solid #1c2733;">
+<img src="./assets/hero-terminal.svg" alt="Animated developer terminal for ARNAV PAGARE (@arnav27-22). whoami → arnav27-22, echo $NAME → ARNAV PAGARE, status → ONLINE · SYNCED, focus → ai · web · software · automation. Typed sequentially and looped." width="100%" style="max-width:820px;">
 </a>
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="./assets/flowing-text.svg" alt="Flowing status line: web · software · ai · automation · developer tools" width="100%" style="max-width:820px;">
+</td>
+</tr>
+</table>
+<!-- 2 · PROFILE CARD -->
+<table role="presentation" width="100%" style="max-width:860px;margin:0 auto;">
+<tr>
+<td style="width:62%;background-color:#0d1524;border:1px solid #223148;border-radius:14px;padding:26px 22px;text-align:center;">
+<table role="presentation" width="100%">
+<tr>
+<td style="vertical-align:middle;width:118px;text-align:center;">
+<span style="display:block;width:104px;margin:0 auto;">
+<img src="./assets/avatar-ring.svg" alt="" width="104" height="104" style="display:block;">
+<img src="./assets/avatar.png" alt="GitHub avatar of ARNAV PAGARE" width="84" height="84" style="display:block;border-radius:50%;margin:-94px auto 0;">
+</span>
+</td>
+<td style="vertical-align:middle;text-align:left;padding-left:10px;">
+<span style="font-size:26px;font-weight:700;color:#f1f5f9;letter-spacing:1px;">ARNAV PAGARE</span>
 <br>
-<img src="./assets/profile-banner.svg" alt="Animated profile banner — ARNAV PAGARE @arnav27-22 · web applications · developer tools · AI exploration. Real GitHub avatar with rotating ring and light sweep." width="100%" style="border-radius:14px;border:1px solid #1c2733;">
-<span style="color:#7dd3fc;font-family:'JetBrains Mono',Consolas,monospace;font-size:13px;"><strong style="color:#e2e8f0;">ARNAV PAGARE</strong> — @arnav27-22 · web applications · developer tools · AI exploration</span>
+<span style="font-family:'JetBrains Mono',Consolas,monospace;font-size:13.5px;color:#22d3ee;">@arnav27-22</span>
 <br><br>
-<!-- ======================= 2 · PROFILE CARD ======================= -->
-<table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
-  <tr>
-    <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:22px 24px;width:68%;">
-      <table role="presentation" width="100%">
-        <tr>
-          <td style="vertical-align:middle;width:96px;">
-            <img src="./assets/avatar.png" alt="GitHub avatar of ARNAV PAGARE" width="84" style="border-radius:50%;border:2px solid #22d3ee;">
-          </td>
-          <td style="vertical-align:middle;padding-left:14px;">
-            <span style="font-size:26px;font-weight:700;color:#f1f5f9;letter-spacing:1px;">ARNAV PAGARE</span>
-            <br>
-            <span style="font-family:'JetBrains Mono',Consolas,monospace;font-size:14px;color:#22d3ee;">@arnav27-22</span>
-            <br><br>
-            <span style="font-size:13.5px;color:#a3b3c8;line-height:1.55;display:inline-block;">
-              I build web applications, developer tools, and complete products —
-              TypeScript from the interface to the API. Currently engineering a
-              full-stack agency platform end to end.
-            </span>
-          </td>
-        </tr>
-      </table>
-      <br>
-      <!-- AUTO:TECH2_START -->
+<span style="font-size:13px;color:#a3b3c8;line-height:1.6;display:inline-block;">Full-stack developer building web apps, tools &amp; products — TypeScript end to end.</span>
+</td>
+</tr>
+</table>
+<br>
+<!-- AUTO:TECH2_START -->
 <div><span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/typescript.svg" width="15" height="15" alt="TypeScript" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">TypeScript</span></span>
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/javascript.svg" width="15" height="15" alt="JavaScript" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">JavaScript</span></span>
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/html5.svg" width="15" height="15" alt="HTML" style="vertical-align:-2px;"> <span style="font-size:12px;color:#7dd3fc;">HTML</span></span>
@@ -42,28 +54,31 @@
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/react.svg" width="15" height="15" alt="React" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">React</span></span>
       <span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/nextdotjs.svg" width="15" height="15" alt="Next.js" style="vertical-align:-2px;"> <span style="font-size:12px;color:#cbd5e1;">Next.js</span></span></div>
 <!-- AUTO:TECH2_END -->
-    </td>
-    <td style="width:32%;padding-left:14px;vertical-align:middle;">
-      <table role="presentation" width="100%">
-        <tr>
-          <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:20px 16px;text-align:center;">
-            <span style="font-size:11px;color:#6b7f96;letter-spacing:2px;font-family:'JetBrains Mono',Consolas,monospace;">PROFILE SYSTEM</span>
-            <br><br>
-            <span style="font-size:12px;color:#34d399;letter-spacing:1px;font-family:'JetBrains Mono',Consolas,monospace;"><span style="color:#34d399;">●</span> LIVE · SYNCED DAILY</span>
-            <br><br>
-            <span style="font-size:11px;color:#475569;font-family:'JetBrains Mono',Consolas,monospace;">repo: arnav27-22/arnav27-22</span>
-            <br><br>
-            <a href="https://github.com/arnav27-22" style="display:inline-block;background-color:#238636;color:#ffffff;text-decoration:none;font-size:12.5px;font-weight:600;border-radius:8px;padding:8px 22px;">Follow</a>
-            &nbsp;
-            <a href="https://github.com/arnav27-22" style="display:inline-block;background-color:#21262d;color:#dbe4ee;text-decoration:none;font-size:12.5px;font-weight:600;border-radius:8px;padding:8px 22px;">Profile ↗</a>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
+</td>
+<td style="width:34%;padding-left:14px;vertical-align:middle;">
+<table role="presentation" width="100%">
+<tr>
+<td style="background-color:#0d1524;border:1px solid #223148;border-radius:14px;padding:22px 16px;text-align:center;">
+<div style="font-family:'JetBrains Mono',Consolas,monospace;font-size:10.5px;color:#6b7f96;letter-spacing:2px;padding-bottom:12px;">PROFILE STATUS</div>
+<!-- AUTO:PROFILE_START -->
+<div style="text-align:center;">
+  <div style="font-size:12px;color:#34d399;font-family:'JetBrains Mono',Consolas,monospace;letter-spacing:1px;line-height:2;"><span style="color:#34d399;">●</span> <strong>ONLINE</strong> · SYNCED</div>
+  <br>
+  <div style="font-size:30px;font-weight:700;color:#7dd3fc;font-family:'JetBrains Mono',Consolas,monospace;line-height:1.1;">1</div>
+  <div style="font-size:10.5px;color:#6b7f96;letter-spacing:2px;padding-bottom:10px;">STARS</div>
+  <div style="font-size:12px;color:#cbd5e1;font-family:'JetBrains Mono',Consolas,monospace;">followers <span style="color:#7dd3fc;">0</span> · following <span style="color:#7dd3fc;">2</span></div>
+  <br>
+  <div style="font-size:10.5px;color:#475569;font-family:'JetBrains Mono',Consolas,monospace;">signal 6.1.0 · sync 2026-08-10</div>
+</div>
+<!-- AUTO:PROFILE_END -->
+</td>
+</tr>
 </table>
-<br>
-<!-- ======================= 3 · PROFILE SIGNAL (AUTO-GENERATED) ======================= -->
+</td>
+</tr>
+</table>
+<!-- 3 · PROFILE SIGNAL -->
+<div style="width:100%;max-width:860px;margin:0 auto;text-align:left;font-family:'JetBrains Mono',Consolas,monospace;font-size:11.5px;color:#7dd3fc;letter-spacing:2px;padding:6px 4px;"><span style="color:#22d3ee;">▸</span> PROFILE SIGNAL <span style="color:#334155;letter-spacing:1px;">——————</span></div>
 <!-- AUTO:STATS_START -->
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
@@ -94,64 +109,17 @@
   </tr>
 </table>
 <!-- AUTO:STATS_END -->
+<br>
 <!-- AUTO:SYNC_START -->
-<div style="text-align:center;color:#6b7f96;font-size:12px;font-family:'JetBrains Mono',Consolas,monospace;"><span style="color:#34d399;">●</span> PROFILE SYNCED · last sync <span style="color:#7dd3fc;">2026-08-10</span> UTC · latest_push <span style="color:#7dd3fc;">arom-studio · 2026-07-29</span></div>
-<div style="text-align:center;margin-top:8px;"><img src="https://github.com/arnav27-22/arnav27-22/actions/workflows/update-profile.yml/badge.svg" alt="Profile sync workflow status" height="20">&nbsp; <img src="https://github.com/arnav27-22/arnav27-22/actions/workflows/snake.yml/badge.svg" alt="Contribution snake workflow status" height="20"></div>
+<div style="text-align:center;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#6b7f96;letter-spacing:1px;"><span style="color:#34d399;">●</span> <span style="color:#cbd5e1;">PROFILE DATA SYNCED</span> · <span style="color:#7dd3fc;">2026-08-10</span> UTC · latest_repo <span style="color:#7dd3fc;">arom-studio · 2026-07-29</span></div>
 <!-- AUTO:SYNC_END -->
-<br>
-<img src="./assets/section-divider.svg" alt="Section divider — traveling light" width="60%" style="max-width:420px;">
-<br>
-<br>
-<!-- ======================= 4 · ABOUT ======================= -->
-<table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
-  <tr>
-    <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:22px 24px;">
-      <span style="font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ about</span>
-      <br><br>
-      <span style="font-size:14px;color:#c3d0e0;line-height:1.7;display:inline-block;">
-        A developer building web applications, developer tools, and digital products with
-        TypeScript at the core. I work across the whole stack — interfaces, APIs, databases,
-        and deployment pipelines — and I ship what I build.
-        <br><br>
-        My main project, <span style="color:#7dd3fc;font-weight:600;">AROM STUDIO</span>, is a full-stack
-        agency platform: a React 19 + Vite experience with an admin dashboard, powered by an
-        Express 5 API, Prisma + PostgreSQL, Redis, S3 / Vercel Blob storage, email automation,
-        analytics, and CI/CD — live on Vercel.
-        <br><br>
-        Alongside it I explore file-sharing products (<span style="color:#7dd3fc;">Share-FIle</span>),
-        encryption and transfer workflows, and AI-assisted development.
-      </span>
-    </td>
-  </tr>
-</table>
-<br>
-<!-- ======================= 5 · CURRENT FOCUS ======================= -->
-<table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
-  <tr>
-    <td style="background-color:#0c1219;border:1px solid #223148;border-radius:14px;padding:20px 24px;font-family:'JetBrains Mono',Consolas,monospace;">
-      <span style="color:#475569;font-size:12px;">┌─[ arnav27-22@github ]──────────────────────────────┐</span><br>
-      <span style="color:#94a3b8;font-size:13px;">&nbsp;&nbsp;<span style="color:#22d3ee;">$</span> currently_building</span><br>
-      <span style="color:#cbd5e1;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp;→ arom-studio — full-stack agency platform, live on Vercel</span><br>
-      <span style="color:#cbd5e1;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp;→ Share-FIle — secure file-sharing platform (Next.js 15)</span><br>
-      <span style="color:#cbd5e1;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp;→ ai experiments — Om-ai workspace</span><br>
-      <span style="color:#475569;font-size:13px;">&nbsp;&nbsp;</span><br>
-      <span style="color:#94a3b8;font-size:13px;">&nbsp;&nbsp;<span style="color:#22d3ee;">$</span> currently_learning</span><br>
-      <span style="color:#cbd5e1;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp;→ TypeScript &amp; type-safe architecture</span><br>
-      <span style="color:#cbd5e1;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp;→ backend systems, APIs &amp; automation pipelines</span><br>
-      <span style="color:#cbd5e1;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp;→ AI / ML exploration</span><br>
-      <span style="color:#cbd5e1;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp;→ shipping &amp; maintaining live systems</span><br>
-      <span style="color:#475569;font-size:12px;">└──────────────────────────────────────────────────┘</span>
-    </td>
-  </tr>
-</table>
-<br>
-<!-- ======================= 6 · TECH STACK ======================= -->
-<table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
-  <tr>
-    <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:20px 24px;text-align:center;">
-      <span style="font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ tech — measured from public repositories</span>
-      <br><br>
-      <!-- AUTO:TECH_START -->
+<img src="./assets/section-divider.svg" alt="Section divider" width="60%" style="max-width:420px;">
+<!-- 4 · TECH STACK -->
+<div style="width:100%;max-width:860px;margin:0 auto;text-align:left;font-family:'JetBrains Mono',Consolas,monospace;font-size:11.5px;color:#7dd3fc;letter-spacing:2px;padding:6px 4px;"><span style="color:#22d3ee;">▸</span> TECH STACK <span style="color:#334155;letter-spacing:1px;">——————</span></div>
+<table role="presentation" width="100%" style="max-width:860px;margin:0 auto;">
+<tr>
+<td style="background-color:#0d1524;border:1px solid #223148;border-radius:14px;padding:24px 22px;text-align:center;">
+<!-- AUTO:TECH_START -->
 <table role="presentation" width="100%">
 <tr>
   <td style="width:22%;text-align:left;font-size:11px;color:#6b7f96;letter-spacing:2px;vertical-align:middle;">LANGUAGES</td>
@@ -174,17 +142,13 @@
 </tr>
 <tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#475569;">Docker · AWS · Vercel</td></tr>
 </table>
-<br>
-<span style="display:block;text-align:center;color:#475569;font-size:11px;font-family:'JetBrains Mono',Consolas,monospace;padding-top:12px;">auto-detected from repository languages &amp; dependency files</span>
 <!-- AUTO:TECH_END -->
-    </td>
-  </tr>
+</td>
+</tr>
 </table>
-<br>
-<!-- ======================= 7 · FEATURED PROJECTS (AUTO-SELECTED) ======================= -->
+<!-- 5 · FEATURED PROJECTS -->
+<div style="width:100%;max-width:860px;margin:0 auto;text-align:left;font-family:'JetBrains Mono',Consolas,monospace;font-size:11.5px;color:#7dd3fc;letter-spacing:2px;padding:6px 4px;"><span style="color:#22d3ee;">▸</span> FEATURED PROJECTS <span style="color:#334155;letter-spacing:1px;">——————</span></div>
 <!-- AUTO:PROJECTS_START -->
-<div style="text-align:center;padding-bottom:10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ featured_projects</div>
-<br>
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
     <td style="width:50%;vertical-align:top;">
@@ -234,93 +198,79 @@
   </tr>
 </table>
 <br>
-<div style="text-align:center;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ other_repos — placeholders &amp; experiments</div>
-<br>
-<a href="https://github.com/arnav27-22/Om-ai" style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:5px 14px;font-size:12px;color:#cbd5e1;text-decoration:none;margin:3px;">Om-ai <span style="color:#6b7f96;">(empty)</span></a>
-<a href="https://github.com/arnav27-22/YT-Download" style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:5px 14px;font-size:12px;color:#cbd5e1;text-decoration:none;margin:3px;">YT-Download <span style="color:#6b7f96;">(empty)</span></a>
-<a href="https://github.com/arnav27-22/Om" style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:5px 14px;font-size:12px;color:#cbd5e1;text-decoration:none;margin:3px;">Om <span style="color:#6b7f96;">(empty)</span></a>
-<br>
 <!-- AUTO:PROJECTS_END -->
-<br>
-<!-- ======================= 8 · DEVELOPMENT ACTIVITY ======================= -->
-<table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
-  <tr>
-    <td style="background-color:#0c1219;border:1px solid #223148;border-radius:14px;padding:20px 24px;font-family:'JetBrains Mono',Consolas,monospace;">
-      <span style="color:#475569;font-size:12px;">┌─[ arnav27-22@github ]──────────────────────────────┐</span><br>
-      <span style="color:#94a3b8;font-size:13px;">&nbsp;&nbsp;<span style="color:#22d3ee;">$</span> git remote -v</span><br>
-      <span style="color:#cbd5e1;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp;github.com/arnav27-22 (origin)</span><br>
-      <span style="color:#94a3b8;font-size:13px;">&nbsp;&nbsp;<span style="color:#22d3ee;">$</span> contributions</span><br>
-      <span style="color:#cbd5e1;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp;tracked live — see the streak card below</span><br>
-      <span style="color:#94a3b8;font-size:13px;">&nbsp;&nbsp;<span style="color:#22d3ee;">$</span> longest_streak</span><br>
-      <span style="color:#cbd5e1;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp;11 days · during arom-studio development</span><br>
-      <span style="color:#94a3b8;font-size:13px;">&nbsp;&nbsp;<span style="color:#22d3ee;">$</span> git branch --show-current</span><br>
-      <span style="color:#34d399;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp;main</span><br>
-      <span style="color:#475569;font-size:12px;">└──────────────────────────────────────────────────┘</span>
-    </td>
-  </tr>
+<img src="./assets/section-divider.svg" alt="Section divider" width="60%" style="max-width:420px;">
+<!-- 6 · CONTRIBUTION ACTIVITY -->
+<div style="width:100%;max-width:860px;margin:0 auto;text-align:left;font-family:'JetBrains Mono',Consolas,monospace;font-size:11.5px;color:#7dd3fc;letter-spacing:2px;padding:6px 4px;"><span style="color:#22d3ee;">▸</span> CONTRIBUTION ACTIVITY <span style="color:#334155;letter-spacing:1px;">——————</span></div>
+<table role="presentation" width="100%" style="max-width:860px;margin:0 auto;">
+<tr>
+<td style="background-color:#0d1524;border:1px solid #223148;border-radius:14px;padding:22px 20px;text-align:center;">
+<table role="presentation" width="100%">
+<tr>
+<td style="text-align:left;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#7dd3fc;letter-spacing:2px;">CONTRIBUTION ACTIVITY</td>
+<td style="text-align:right;"><!-- AUTO:CONTRIB_START -->
+<div style="font-size:11px;color:#6b7f96;font-family:'JetBrains Mono',Consolas,monospace;">282 contributions · 2025-08-10 → 2026-08-10</div>
+<!-- AUTO:CONTRIB_END --></td>
+</tr>
 </table>
 <br>
-<!-- ======================= 9 · CONTRIBUTION ANIMATION ======================= -->
-<table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
-  <tr>
-    <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:18px 14px;text-align:center;">
-      <span style="display:block;text-align:center;padding-bottom:10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ contribution_graph</span>
-      <img src="./assets/contribution.svg" alt="Real GitHub contribution calendar for ARNAV PAGARE (@arnav27-22) — 276 contributions in the last year, regenerated daily by GitHub Actions" width="100%" style="border-radius:12px;">
-      <br><br>
-      <img src="./assets/contribution-snake.svg" alt="Contribution snake for ARNAV PAGARE (@arnav27-22) — generated nightly from real GitHub contribution data by GitHub Actions" width="100%" style="border-radius:12px;">
-      <span style="display:block;text-align:center;color:#3b4c63;font-size:11px;margin-top:8px;">real contribution data · re-generated every day by <span style="color:#64748b;">.github/workflows/snake.yml</span> and <span style="color:#64748b;">update-profile.yml</span></span>
-    </td>
-  </tr>
+<img src="./assets/contribution.svg" alt="GitHub contribution calendar for ARNAV PAGARE (@arnav27-22) — real contribution data for the last 12 months, regenerated daily" width="100%" style="border-radius:14px;">
+<br><br>
+<img src="./assets/contribution-snake.svg" alt="Contribution snake animation built from real GitHub contribution data" width="100%" style="border-radius:14px;">
+<br><br>
+<span style="display:inline-block;font-size:10.5px;color:#475569;font-family:'JetBrains Mono',Consolas,monospace;letter-spacing:1px;">less</span>
+&nbsp;
+<span style="display:inline-block;width:12px;height:12px;background-color:#141c27;border-radius:3px;"></span>
+<span style="display:inline-block;width:12px;height:12px;background-color:#0e4429;border-radius:3px;"></span>
+<span style="display:inline-block;width:12px;height:12px;background-color:#006d32;border-radius:3px;"></span>
+<span style="display:inline-block;width:12px;height:12px;background-color:#26a641;border-radius:3px;"></span>
+<span style="display:inline-block;width:12px;height:12px;background-color:#39d353;border-radius:3px;"></span>
+&nbsp;
+<span style="display:inline-block;font-size:10.5px;color:#475569;font-family:'JetBrains Mono',Consolas,monospace;letter-spacing:1px;">more</span>
+</td>
+</tr>
 </table>
+<!-- 7 · LIVE PROJECTS -->
+<div style="width:100%;max-width:860px;margin:0 auto;text-align:left;font-family:'JetBrains Mono',Consolas,monospace;font-size:11.5px;color:#7dd3fc;letter-spacing:2px;padding:6px 4px;"><span style="color:#22d3ee;">▸</span> LIVE PROJECTS <span style="color:#334155;letter-spacing:1px;">——————</span></div>
+<!-- AUTO:LIVE_START -->
+<div style="font-size:11.5px;color:#6b7f96;font-family:'JetBrains Mono',Consolas,monospace;text-align:center;letter-spacing:1px;">1 verified deployment</div>
 <br>
-<!-- ======================= 10 · GITHUB STATISTICS ======================= -->
 <table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
   <tr>
-    <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:18px 22px;text-align:center;vertical-align:middle;width:60%;">
-      <span style="display:block;text-align:center;padding-bottom:10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ stats</span>
-      <img src="https://streak-stats.demolab.com/?user=arnav27-22&theme=dark&background=0b1117&border=111923&stroke=22d3ee&ring=22d3ee&fire=38bdf8&currStreakNum=22d3ee&sideNums=7dd3fc&currStreakLabel=8b5cf6&sideLabels=7dd3fc&hide_border=true" alt="GitHub streak statistics for ARNAV PAGARE (@arnav27-22) — 276 total contributions since Oct 2025, longest streak 11 days" width="100%">
-    </td>
+    <td style="width:50%;vertical-align:top;">
+  <table role="presentation" width="100%">
+    <tr>
+      <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:18px 20px;">
+        <span style="font-size:16px;font-weight:700;color:#f1f5f9;">arom-studio</span>
+        <br>
+        <span style="font-size:12.5px;color:#a3b3c8;line-height:1.6;display:inline-block;">Web design &amp; development agency platform: marketing experience…</span>
+        <br><br>
+        <a href="https://arom-studio.vercel.app" style="display:inline-block;background-color:#22d3ee;color:#062018;text-decoration:none;font-size:12px;font-weight:700;border-radius:8px;padding:7px 14px;">LIVE DEMO ↗</a>
+        &nbsp;
+        <a href="https://github.com/arnav27-22/arom-studio" style="display:inline-block;background-color:#21262d;color:#cbd5e1;text-decoration:none;font-size:12px;font-weight:600;border-radius:8px;padding:7px 14px;">GITHUB</a>
+      </td>
+    </tr>
+  </table>
+</td>
     <td style="width:2%;"></td>
-    <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:18px 22px;vertical-align:middle;width:38%;">
-      <!-- AUTO:STATS2_START -->
-<div style="font-size:13px;color:#cbd5e1;line-height:2;font-family:'JetBrains Mono',Consolas,monospace;">
-        repositories&nbsp;&nbsp;&nbsp;<span style="color:#7dd3fc;">6</span><br>
-        stars&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7dd3fc;">1</span><br>
-        forks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7dd3fc;">0</span><br>
-        top_langs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#7dd3fc;">TypeScript · JavaScript · HTML · CSS · Dockerfile</span>
-      </div>
-      <br><br>
-      <span style="font-size:10.5px;color:#475569;">auto-synced <span style="color:#6b7f96;">2026-08-10</span> · UTC · daily · github actions</span>
-<!-- AUTO:STATS2_END -->
-    </td>
+    <td style="width:50%;"></td>
   </tr>
 </table>
 <br>
-<!-- ======================= 11 · DEVELOPMENT PHILOSOPHY ======================= -->
-<table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
-  <tr>
-    <td style="text-align:center;padding:6px 0;">
-      <span style="font-family:'JetBrains Mono',Consolas,monospace;font-size:13px;color:#6b7f96;letter-spacing:1px;">
-        BUILD <span style="color:#3b4c63;">↓</span> BREAK <span style="color:#3b4c63;">↓</span> UNDERSTAND <span style="color:#3b4c63;">↓</span> IMPROVE <span style="color:#3b4c63;">↓</span> <span style="color:#22d3ee;">SHIP</span>
-      </span>
-    </td>
-  </tr>
+<!-- AUTO:LIVE_END -->
+<!-- 8 · CONNECT -->
+<div style="width:100%;max-width:860px;margin:0 auto;text-align:left;font-family:'JetBrains Mono',Consolas,monospace;font-size:11.5px;color:#7dd3fc;letter-spacing:2px;padding:6px 4px;"><span style="color:#22d3ee;">▸</span> CONNECT <span style="color:#334155;letter-spacing:1px;">——————</span></div>
+<table role="presentation" width="100%" style="max-width:860px;margin:0 auto;">
+<tr>
+<td style="background-color:#0d1524;border:1px solid #223148;border-radius:14px;padding:20px 22px;text-align:center;">
+<a href="https://github.com/arnav27-22" style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:7px 18px;font-size:12.5px;color:#dbe4ee;text-decoration:none;margin:3px;">GitHub</a>
+<a href="https://arom-studio.vercel.app" style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:7px 18px;font-size:12.5px;color:#dbe4ee;text-decoration:none;margin:3px;">AROM STUDIO ↗</a>
+<a href="https://www.instagram.com/aromstudio.in/" style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:7px 18px;font-size:12.5px;color:#dbe4ee;text-decoration:none;margin:3px;">Instagram <span style="color:#6b7f96;">@aromstudio.in</span></a>
+</td>
+</tr>
 </table>
-<br>
-<!-- ======================= 13 · CONNECT ======================= -->
-<table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
-  <tr>
-    <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:18px 24px;text-align:center;">
-      <span style="display:block;text-align:center;padding-bottom:10px;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#22d3ee;letter-spacing:2px;">$ connect</span>
-      <a href="https://github.com/arnav27-22" style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:6px 16px;font-size:12.5px;color:#dbe4ee;text-decoration:none;margin:3px;">GitHub</a>
-      <a href="https://arom-studio.vercel.app" style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:6px 16px;font-size:12.5px;color:#dbe4ee;text-decoration:none;margin:3px;">AROM STUDIO ↗</a>
-      <a href="https://www.instagram.com/aromstudio.in/" style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:6px 16px;font-size:12.5px;color:#dbe4ee;text-decoration:none;margin:3px;">Instagram <span style="color:#6b7f96;">@aromstudio.in</span></a>
-    </td>
-  </tr>
-</table>
-<br>
-<img src="./assets/section-divider.svg" alt="Section divider — traveling light" width="60%" style="max-width:420px;">
-<br>
-<!-- ======================= 14 · FOOTER ======================= -->
-<img src="./assets/footer.svg" alt="Footer — ARNAV PAGARE @arnav27-22. Thanks for exploring. github.com/arnav27-22" width="100%" style="border-radius:12px;">
+<!-- 9 · FOOTER -->
+<a href="https://github.com/arnav27-22">
+<img src="./assets/footer.svg" alt="Footer — ARNAV PAGARE @arnav27-22. Session closed, thanks for exploring. github.com/arnav27-22" width="100%" style="max-width:820px;border-radius:16px;">
+</a>
 </div>

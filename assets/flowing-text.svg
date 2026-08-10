@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="40" viewBox="0 0 840 40" role="img" aria-labelledby="ft1 ft2">
+  <title id="ft1">Developer focus flow</title>
+  <desc id="ft2">Slowly flowing technical status line: web software ai automation developer tools.</desc>
+  <style>
+    .marq { animation: flow 46s linear infinite }
+    @keyframes flow { from { transform: translateX(0) } to { transform: translateX(-484px) } }
+  </style>
+  <defs>
+    <mask id="fadeMask">
+      <rect width="840" height="40" fill="white"/>
+      <rect x="0" y="0" width="130" height="40" fill="url(#fadeL)"/>
+      <rect x="710" y="0" width="130" height="40" fill="url(#fadeR)"/>
+    </mask>
+    <linearGradient id="fadeL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="white" stop-opacity="0"/><stop offset="1" stop-color="white" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="fadeR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="white" stop-opacity="1"/><stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g mask="url(#fadeMask)" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="13">
+    <g class="marq">
+      <!-- phrase copies pitched every 484px (~62 chars x 7.8px mono advance) -->
+      <text y="27" fill="#475569">WEB&#160;&#160;·&#160;&#160;SOFTWARE&#160;&#160;·&#160;&#160;AI&#160;&#160;·&#160;&#160;AUTOMATION&#160;&#160;·&#160;&#160;DEVELOPER&#160;&#160;TOOLS&#160;&#160;·&#160;&#160;</text>
+      <text x="484" y="27" fill="#475569">WEB&#160;&#160;·&#160;&#160;SOFTWARE&#160;&#160;·&#160;&#160;AI&#160;&#160;·&#160;&#160;AUTOMATION&#160;&#160;·&#160;&#160;DEVELOPER&#160;&#160;TOOLS&#160;&#160;·&#160;&#160;</text>
+      <text x="968" y="27" fill="#475569">WEB&#160;&#160;·&#160;&#160;SOFTWARE&#160;&#160;·&#160;&#160;AI&#160;&#160;·&#160;&#160;AUTOMATION&#160;&#160;·&#160;&#160;DEVELOPER&#160;&#160;TOOLS&#160;&#160;·&#160;&#160;</text>
+      <text x="1452" y="27" fill="#475569">WEB&#160;&#160;·&#160;&#160;SOFTWARE&#160;&#160;·&#160;&#160;AI&#160;&#160;·&#160;&#160;AUTOMATION&#160;&#160;·&#160;&#160;DEVELOPER&#160;&#160;TOOLS&#160;&#160;·&#160;&#160;</text>
+    </g>
+  </g>
+</svg>

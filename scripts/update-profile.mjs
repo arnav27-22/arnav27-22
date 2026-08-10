@@ -11,7 +11,7 @@ const TECH_DATA_PATH = join(ROOT, 'generated', 'tech.json');
 const AVATAR_PATH = join(ROOT, 'assets', 'avatar.png');
 const CONTRIB_PATH = join(ROOT, 'assets', 'contribution.svg');
 const TECH_DIR = join(ROOT, 'assets', 'tech');
-const REGIONS = ['SYNC', 'STATS', 'STATS2', 'TECH', 'TECH2', 'PROJECTS'];
+const REGIONS = ['SYNC', 'STATS', 'PROFILE', 'TECH', 'TECH2', 'PROJECTS', 'LIVE', 'CONTRIB'];
 const mono = "'JetBrains Mono',Consolas,monospace";
 
 const C = {
@@ -186,8 +186,9 @@ function card(p, isTop) {
 </td>`;
 }
 
-function renderProjects(featured, others, empties) {
-  let out = '<div style="text-align:center;padding-bottom:10px;font-family:' + mono + ';font-size:12px;color:' + C.cyan + ';letter-spacing:2px;">$ featured_projects</div>\n<br>\n';
+function renderProjects(featured) {
+  if (!featured.length) return `<div style="font-size:11.5px;color:${C.mute};font-family:${mono};text-align:center;">no featured repositories yet</div>`;
+  let out = '';
   for (let i = 0; i < featured.length; i += 2) {
     const left = card(featured[i], i === 0);
     const right = featured[i + 1] ? card(featured[i + 1], false) : '<td style="width:50%;"></td>';
@@ -201,17 +202,45 @@ function renderProjects(featured, others, empties) {
 <br>
 `;
   }
-  const chips = [
-    ...others.map((p) => ({ name: p.name, note: '(experimental)', url: p.url })),
-    ...empties.map((p) => ({ name: p.name, note: '(empty)', url: p.url })),
-  ];
-  if (chips.length) {
-    out += `<div style="text-align:center;font-family:${mono};font-size:12px;color:${C.cyan};letter-spacing:2px;">$ other_repos — placeholders &amp; experiments</div>\n<br>\n`;
-    for (const c of chips) {
-      const pillStyle = `display:inline-block;background-color:#101a28;border:1px solid ${C.border};border-radius:999px;padding:5px 14px;font-size:12px;color:${C.b};text-decoration:none;margin:3px;`;
-      out += `<a href="${c.url}" style="${pillStyle}">${c.name} <span style="color:${C.mute};">${c.note}</span></a>\n`;
-    }
-    out += '<br>\n';
+  return out;
+}
+
+function liveCard(p) {
+  const desc = (p.description || CURATED[p.name] || 'public repository').length > 64
+    ? (p.description || CURATED[p.name] || 'public repository').slice(0, 64).replace(/\s+\S*$/, '') + '…'
+    : (p.description || CURATED[p.name] || 'public repository');
+  return `<td style="width:50%;vertical-align:top;">
+  <table role="presentation" width="100%">
+    <tr>
+      <td style="background-color:${C.panel};border:1px solid ${C.border};border-radius:14px;padding:18px 20px;">
+        <span style="font-size:16px;font-weight:700;color:${C.a};">${esc(p.name)}</span>
+        <br>
+        <span style="font-size:12.5px;color:${C.c};line-height:1.6;display:inline-block;">${esc(desc)}</span>
+        <br><br>
+        <a href="${esc(p.homepage)}" style="display:inline-block;background-color:${C.cyan};color:#062018;text-decoration:none;font-size:12px;font-weight:700;border-radius:8px;padding:7px 14px;">LIVE DEMO ↗</a>
+        &nbsp;
+        <a href="${p.url}" style="display:inline-block;background-color:#21262d;color:${C.b};text-decoration:none;font-size:12px;font-weight:600;border-radius:8px;padding:7px 14px;">GITHUB</a>
+      </td>
+    </tr>
+  </table>
+</td>`;
+}
+
+function renderLive(deployed) {
+  if (!deployed.length) return `<div style="font-size:11.5px;color:${C.mute};font-family:${mono};text-align:center;">no deployments detected</div>`;
+  let out = `<div style="font-size:11.5px;color:${C.mute};font-family:${mono};text-align:center;letter-spacing:1px;">${deployed.length} verified deployment${deployed.length === 1 ? '' : 's'}</div>\n<br>\n`;
+  for (let i = 0; i < deployed.length; i += 2) {
+    const left = liveCard(deployed[i]);
+    const right = deployed[i + 1] ? liveCard(deployed[i + 1]) : '<td style="width:50%;"></td>';
+    out += `<table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
+  <tr>
+    ${left}
+    <td style="width:2%;"></td>
+    ${right}
+  </tr>
+</table>
+<br>
+`;
   }
   return out;
 }
@@ -238,28 +267,21 @@ function renderStats(s) {
   return out;
 }
 
-function renderPanel(s, date) {
-  return `<div style="font-size:13px;color:${C.b};line-height:2;font-family:${mono};">
-        repositories&nbsp;&nbsp;&nbsp;<span style="color:${C.soft};">${s.repos}</span><br>
-        stars&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:${C.soft};">${s.stars}</span><br>
-        forks&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:${C.soft};">${s.forks}</span><br>
-        top_langs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:${C.soft};">${s.topLangs.join(' · ')}</span>
-      </div>
-      <br><br>
-      <span style="font-size:10.5px;color:${C.dim};">auto-synced <span style="color:${C.mute};">${date}</span> · UTC · daily · github actions</span>`;
+function renderProfile(s, date) {
+  return `<div style="text-align:center;">
+  <div style="font-size:12px;color:${C.green};font-family:${mono};letter-spacing:1px;line-height:2;"><span style="color:${C.green};">●</span> <strong>ONLINE</strong> · SYNCED</div>
+  <br>
+  <div style="font-size:30px;font-weight:700;color:${C.soft};font-family:${mono};line-height:1.1;">${s.stars}</div>
+  <div style="font-size:10.5px;color:${C.mute};letter-spacing:2px;padding-bottom:10px;">STARS</div>
+  <div style="font-size:12px;color:${C.b};font-family:${mono};">followers <span style="color:${C.soft};">${s.followers}</span> · following <span style="color:${C.soft};">${s.following}</span></div>
+  <br>
+  <div style="font-size:10.5px;color:${C.dim};font-family:${mono};">signal ${s.repos}.${s.stars}.${s.forks} · sync ${date}</div>
+</div>`;
 }
 
 function renderSync(stats, date, commits, lastPush) {
-  const badges = [
-    `<img src="https://github.com/arnav27-22/arnav27-22/actions/workflows/update-profile.yml/badge.svg" alt="Profile sync workflow status" height="20">`,
-    `<img src="https://github.com/arnav27-22/arnav27-22/actions/workflows/snake.yml/badge.svg" alt="Contribution snake workflow status" height="20">`,
-  ];
-  let line = `<span style="color:${C.green};">●</span> PROFILE SYNCED`;
-  line += ` · last sync <span style="color:${C.soft};">${date}</span> UTC`;
-  if (commits) line += ` · commits <span style="color:${C.soft};">${commits}</span>`;
-  line += ` · latest_push <span style="color:${C.soft};">${lastPush}</span>`;
-  return `<div style="text-align:center;color:${C.mute};font-size:12px;font-family:${mono};">${line}</div>
-<div style="text-align:center;margin-top:8px;">${badges.join('&nbsp; ')}</div>`;
+  const cmd = lastPush ? ` · latest_repo <span style="color:${C.soft};">${esc(lastPush)}</span>` : '';
+  return `<div style="text-align:center;font-family:${mono};font-size:12px;color:${C.mute};letter-spacing:1px;"><span style="color:${C.green};">●</span> <span style="color:${C.b};">PROFILE DATA SYNCED</span> · <span style="color:${C.soft};">${date}</span> UTC${commits ? ` · commits <span style="color:${C.soft};">${commits}</span>` : ''}${cmd}</div>`;
 }
 
 function localLogos() {
@@ -296,8 +318,7 @@ function renderTechTable(techKeys) {
       ...(techs.length ? [`<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#475569;">${techs.map((k) => TECH_META[k].label).join(' · ')}</td></tr>`] : []),
     ].join('\n');
   }).filter(Boolean);
-  const note = `<span style="display:block;text-align:center;color:${C.dim};font-size:11px;font-family:${mono};padding-top:12px;">auto-detected from repository languages &amp; dependency files</span>`;
-  return `<table role="presentation" width="100%">\n${groups.join('\n')}\n</table>\n<br>\n${note}`;
+  return `<table role="presentation" width="100%">\n${groups.join('\n')}\n</table>`;
 }
 
 async function renderContributionSvg() {
@@ -313,7 +334,7 @@ async function renderContributionSvg() {
   if (!dates.length) throw new Error('no contribution dates');
   const first = new Date(dates[0]);
   const PAL = { 0: '#141c27', 1: '#0e4429', 2: '#006d32', 3: '#26a641', 4: '#39d353' };
-  const CELL = 9, PITCH = 12, X0 = 40, Y0 = 34;
+  const CELL = 9, PITCH = 12, X0 = 34, Y0 = 22;
   const maxLvl = Math.max(...cells.map((c) => c.level));
   const months = new Map();
   let maxWeek = 0;
@@ -331,23 +352,23 @@ async function renderContributionSvg() {
   const rectsHtml = rects.map((r) =>
     `<rect x="${r.x}" y="${r.y}" width="${CELL}" height="${CELL}" rx="2.5" fill="${r.fill}"${r.level === maxLvl && maxLvl > 0 ? ' class="hot"' : ''}/>`).join('\n');
   const dayLbl = ['sun', 'mon', 'wed', 'fri'].map((l, i) => `<text x="14" y="${Y0 + [0, 1, 3, 5][i] * PITCH + 7}" font-family="'JetBrains Mono',Consolas,monospace" font-size="9" fill="#475569">${l}</text>`).join('\n');
-  const cap = total !== null ? `${total} contributions · ${dates[0]} → ${dates[dates.length - 1]}` : `real calendar data · ${dates[0]} → ${dates[dates.length - 1]}`;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="cg1 cg2">
+  return {
+    total,
+    from: dates[0],
+    to: dates[dates.length - 1],
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="cg1 cg2">
   <title id="cg1">Contribution activity — arnav27-22</title>
-  <desc id="cg2">Real GitHub contribution calendar for ARNAV PAGARE (@arnav27-22): ${cap}. Regenerated daily by GitHub Actions.</desc>
+  <desc id="cg2">Real GitHub contribution calendar for ARNAV PAGARE (@arnav27-22): ${total} contributions from ${dates[0]} to ${dates[dates.length - 1]}. Regenerated daily.</desc>
   <style>
     @keyframes cgpulse { 0%,100% { opacity: 1 } 50% { opacity: .55 } }
     .hot { animation: cgpulse 3.4s ease-in-out infinite }
-    @keyframes cgblink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
-    .blink { animation: cgblink 1.3s steps(1) infinite }
   </style>
   <rect width="${W}" height="${H}" rx="14" fill="#0b1117"/>
-  <text x="${X0}" y="22" font-family="'JetBrains Mono',Consolas,monospace" font-size="12" font-weight="700" fill="#22d3ee" letter-spacing="2">CONTRIBUTION CALENDAR · ${cap}</text>
   ${dayLbl}
   ${monthsHtml}
   ${rectsHtml}
-  <text x="${W / 2}" y="${H - 12}" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="10.5" fill="#64748b">real data · re-generated by github actions<tspan class="blink" fill="#22d3ee">▌</tspan></text>
-</svg>`;
+</svg>`,
+  };
 }
 
 async function writeIfChanged(path, content) {
@@ -394,6 +415,20 @@ function validateSnippet(snippet, label) {
   if (snippet.split('\n').slice(0, -1).some((l) => !l.trim())) {
     throw new Error(`${label}: region content must not contain blank lines (they break GitHub's HTML blocks)`);
   }
+}
+
+function renderContrib(contrib) {
+  if (!contrib?.total) return `<div style="font-size:11px;color:${C.mute};font-family:${mono};">activity · last 12 months</div>`;
+  return `<div style="font-size:11px;color:${C.mute};font-family:${mono};">${contrib.total} contributions · ${contrib.from} → ${contrib.to}</div>`;
+}
+
+function deployedProjects(projects) {
+  return projects.filter((p) => {
+    try {
+      const u = new URL(p.homepage);
+      return u.protocol === 'http:' || u.protocol === 'https:';
+    } catch { return false; }
+  }).map((p) => ({ ...p, homepage: new URL(p.homepage).toString().replace(/\/$/, '') }));
 }
 
 async function main() {
@@ -484,6 +519,16 @@ async function main() {
   const commits = await fetchCommits();
   const today = new Date().toISOString().slice(0, 10);
 
+  let contrib = null;
+  let contribSvg = null;
+  try {
+    const c = await renderContributionSvg();
+    contribSvg = c.svg;
+    contrib = { total: c.total ?? 0, from: c.from, to: c.to };
+  } catch (err) {
+    console.warn('contribution fetch failed — keeping previous asset —', err.message);
+  }
+
   const repoDeps = {};
   const depTechs = new Set();
   for (const r of repos) {
@@ -516,6 +561,7 @@ async function main() {
     stats: { repos: repos.length, stars: totalStars, forks: totalForks, followers: user.followers, following: user.following, topLangs },
     commits,
     lastPush,
+    contrib,
     empties,
     projects: [...selected, ...rest].map((p) => ({
       name: p.name, description: p.description, curated: p.description ? null : CURATED[p.name] ?? null,
@@ -527,10 +573,12 @@ async function main() {
   const R = {
     SYNC: renderSync(data.stats, today, commits, lastPush),
     STATS: renderStats(data.stats),
-    STATS2: renderPanel(data.stats, today),
+    PROFILE: renderProfile(data.stats, today),
     TECH: renderTechTable(techKeys),
     TECH2: renderPills(techKeys),
-    PROJECTS: renderProjects(selected, rest, empties),
+    PROJECTS: renderProjects(selected),
+    LIVE: renderLive(deployedProjects([...selected, ...rest])),
+    CONTRIB: renderContrib(data.contrib),
   };
 
   for (const name of REGIONS) validateSnippet(R[name], name);
@@ -564,10 +612,12 @@ async function main() {
   }
 
   let contribChanged = false;
-  try {
-    contribChanged = await writeIfChanged(CONTRIB_PATH, await renderContributionSvg());
-  } catch (err) {
-    console.warn('contribution.svg: kept previous asset —', err.message);
+  if (contribSvg) {
+    try {
+      contribChanged = await writeIfChanged(CONTRIB_PATH, contribSvg);
+    } catch (err) {
+      console.warn('contribution.svg: kept previous asset —', err.message);
+    }
   }
   const avatarChanged = await syncAvatar(user.avatar_url);
 

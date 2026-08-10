@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112" role="img" aria-labelledby="ar1 ar2">
+  <title id="ar1">Animated profile ring</title>
+  <desc id="ar2">Subtle slowly rotating cyan ring around the profile avatar.</desc>
+  <style>
+    .spin { animation: spin 14s linear infinite; transform-origin: 56px 56px }
+    .pulse { animation: pulse 3.2s ease-in-out infinite }
+    @keyframes spin { from { transform: rotate(0deg) } to { transform: rotate(360deg) } }
+    @keyframes pulse { 0%,100% { opacity: .5 } 50% { opacity: 1 } }
+  </style>
+  <defs>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset=".5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <circle cx="56" cy="56" r="53" fill="none" stroke="#10233a" stroke-width="2"/>
+  <g class="spin">
+    <circle cx="56" cy="56" r="53" fill="none" stroke="url(#ringGrad)" stroke-width="2" stroke-dasharray="10 14" stroke-linecap="round" class="pulse"/>
+  </g>
+</svg>

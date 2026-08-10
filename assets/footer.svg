@@ -1,20 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="170" viewBox="0 0 840 170" role="img" aria-labelledby="foot-title foot-desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="190" viewBox="0 0 840 190" role="img" aria-labelledby="foot-title foot-desc">
   <title id="foot-title">ARNAV PAGARE — @arnav27-22</title>
-  <desc id="foot-desc">Animated footer for the GitHub profile of ARNAV PAGARE (@arnav27-22). Thanks for exploring.</desc>
+  <desc id="foot-desc">Animated terminal-exit footer for the GitHub profile of ARNAV PAGARE (@arnav27-22). Session closed.</desc>
   <style>
     @keyframes blink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
     @keyframes wave1 { from { transform: translateX(0) } to { transform: translateX(-840px) } }
     @keyframes wave2 { from { transform: translateX(-420px) } to { transform: translateX(-1260px) } }
-    @keyframes gentle { 0%,100% { opacity: .5 } 50% { opacity: .9 } }
+    @keyframes gentle { 0%,100% { opacity: .45 } 50% { opacity: .9 } }
     @keyframes drift { 0% { transform: translate(0,0) } 50% { transform: translate(8px,-12px) } 100% { transform: translate(0,0) } }
-    @keyframes band { 0% { transform: translateX(-420px); opacity: 0 } 15% { opacity: .35 } 55% { opacity: .12 } 100% { transform: translateX(840px); opacity: 0 } }
+    @keyframes band { 0% { transform: translateX(-420px); opacity: 0 } 15% { opacity: .3 } 55% { opacity: .1 } 100% { transform: translateX(840px); opacity: 0 } }
+    @keyframes glowpulse { 0%,100% { opacity: .18 } 50% { opacity: .4 } }
     .blink { animation: blink 1.2s steps(1) infinite }
     .w1 { animation: wave1 14s linear infinite }
     .w2 { animation: wave2 20s linear infinite }
     .gentle { animation: gentle 4s ease-in-out infinite }
     .drift1 { animation: drift 9s ease-in-out infinite }
     .drift2 { animation: drift 12s ease-in-out 1.2s infinite }
-    .band { animation: band 14s ease-in-out infinite }
+    .band { animation: band 16s ease-in-out infinite }
+    .glow { animation: glowpulse 6s ease-in-out infinite }
   </style>
   <defs>
     <linearGradient id="footBg" x1="0" y1="0" x2="0" y2="1">
@@ -28,34 +30,42 @@
     </linearGradient>
     <linearGradient id="bandGrad" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#7dd3fc" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#7dd3fc" stop-opacity=".5"/>
+      <stop offset=".5" stop-color="#7dd3fc" stop-opacity=".4"/>
       <stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="footClip">
-      <rect width="840" height="170" rx="16"/>
+      <rect width="840" height="190" rx="16"/>
     </clipPath>
+    <filter id="fsoft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter>
   </defs>
 
-  <rect width="840" height="170" rx="16" fill="url(#footBg)" stroke="url(#footStroke)" stroke-width="1"/>
+  <rect width="840" height="190" rx="16" fill="url(#footBg)" stroke="url(#footStroke)" stroke-width="1"/>
+  <ellipse cx="420" cy="150" rx="300" ry="60" fill="#0e7490" opacity=".2" filter="url(#fsoft)" class="glow"/>
 
   <g>
     <g class="w1">
-      <path d="M0,132 C70,116 140,116 210,132 C280,148 350,148 420,132 C490,116 560,116 630,132 C700,148 770,148 840,132 L840,170 L0,170 Z" fill="#22d3ee" opacity=".06"/>
-      <path d="M0,146 C70,136 140,136 210,146 C280,156 350,156 420,146 C490,136 560,136 630,146 C700,156 770,156 840,146 L840,170 L0,170 Z" fill="#22d3ee" opacity=".045"/>
+      <path d="M0,146 C70,130 140,130 210,146 C280,162 350,162 420,146 C490,130 560,130 630,146 C700,162 770,162 840,146 L840,190 L0,190 Z" fill="#22d3ee" opacity=".06"/>
+      <path d="M0,160 C70,150 140,150 210,160 C280,170 350,170 420,160 C490,150 560,150 630,160 C700,170 770,170 840,160 L840,190 L0,190 Z" fill="#22d3ee" opacity=".045"/>
     </g>
     <g class="w2" opacity=".8">
-      <path d="M0,138 C80,124 160,124 240,138 C320,152 400,152 480,138 C560,124 640,124 720,138 C780,148 820,148 840,144 L840,170 L0,170 Z" fill="#38bdf8" opacity=".05"/>
+      <path d="M0,152 C80,138 160,138 240,152 C320,166 400,166 480,152 C560,138 640,138 720,152 C780,162 820,162 840,158 L840,190 L0,190 Z" fill="#38bdf8" opacity=".05"/>
     </g>
   </g>
 
   <g clip-path="url(#footClip)">
-    <rect x="-420" y="0" width="420" height="170" fill="url(#bandGrad)" class="band"/>
+    <rect x="-420" y="0" width="420" height="190" fill="url(#bandGrad)" class="band"/>
   </g>
 
-  <g class="drift1"><circle cx="150" cy="120" r="1.8" fill="#22d3ee" opacity=".5"/></g>
-  <g class="drift2"><circle cx="690" cy="112" r="1.5" fill="#a78bfa" opacity=".45"/></g>
+  <g class="drift1"><circle cx="150" cy="134" r="1.8" fill="#22d3ee" opacity=".5"/></g>
+  <g class="drift2"><circle cx="690" cy="126" r="1.5" fill="#a78bfa" opacity=".45"/></g>
+  <g class="drift1"><circle cx="380" cy="150" r="1.4" fill="#22d3ee" opacity=".4"/></g>
+  <g class="drift2"><circle cx="520" cy="140" r="1.6" fill="#60a5fa" opacity=".45"/></g>
 
-  <text x="420" y="62" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="24" font-weight="700" fill="#f1f5f9" letter-spacing="3">ARNAV PAGARE</text>
-  <text x="420" y="92" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="15" fill="#22d3ee">@arnav27-22<tspan class="blink" fill="#22d3ee">▌</tspan></text>
-  <text x="420" y="118" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="12" fill="#64748b" class="gentle">thanks for exploring · github.com/arnav27-22</text>
+  <text x="420" y="62" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="26" font-weight="700" fill="#f1f5f9" letter-spacing="3">ARNAV PAGARE</text>
+  <text x="420" y="94" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="15" fill="#22d3ee">@arnav27-22<tspan class="blink" fill="#22d3ee">▌</tspan></text>
+  <text x="420" y="122" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="12" fill="#64748b" class="gentle">session closed — thanks for exploring · github.com/arnav27-22</text>
+
+  <rect x="60" y="150" width="720" height="26" rx="6" fill="#101a28" stroke="#1c2733" stroke-width="1"/>
+  <text x="78" y="168" font-family="'JetBrains Mono',Consolas,monospace" font-size="11" fill="#475569"><tspan fill="#34d399">●</tspan> <tspan fill="#94a3b8">main</tspan> <tspan fill="#facc15" dx="14">●</tspan> <tspan fill="#94a3b8">git</tspan> <tspan fill="#22d3ee" dx="14">●</tspan> <tspan fill="#94a3b8">sync</tspan> <tspan dx="14" fill="#64748b">UTF-8</tspan> <tspan dx="14" fill="#64748b">zsh</tspan></text>
+  <text x="762" y="168" text-anchor="end" font-family="'JetBrains Mono',Consolas,monospace" font-size="11" fill="#475569">exit — 0</text>
 </svg>

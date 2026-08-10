@@ -1,136 +1,150 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="460" viewBox="0 0 840 460" role="img" aria-labelledby="ht ht2">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="464" viewBox="0 0 840 464" role="img" aria-labelledby="ht ht2">
   <title id="ht">ARNAV PAGARE — Developer Terminal</title>
-  <desc id="ht2">Animated terminal hero. whoami: arnav27-22 · echo $NAME: ARNAV PAGARE · git status: building… · focus: ai · web · software · automation. Typed character by character and looped.</desc>
+  <desc id="ht2">Animated developer terminal: whoami → arnav27-22, echo $NAME → ARNAV PAGARE, status → ONLINE · SYNCED, focus → AI · WEB · SOFTWARE · AUTOMATION. Typed character by character and looped.</desc>
   <style>
-    @keyframes type { 0%{opacity:0} 4%{opacity:1} 90%{opacity:1} 96%{opacity:0} 100%{opacity:0} }
-    @keyframes blinker { 0%,49%{opacity:1} 50%,100%{opacity:0} }
-    @keyframes caretRun { 0%,3.5%{transform:translateY(0)} 8.8%{transform:translateY(20px)} 16.5%{transform:translateY(48px)} 24.7%{transform:translateY(70px)} 32.9%{transform:translateY(98px)} 41.2%{transform:translateY(120px)} 50.6%{transform:translateY(148px)} 55.3%,90%{transform:translateY(170px);opacity:1} 96%,100%{transform:translateY(170px);opacity:0} }
-    @keyframes gridmove { from{transform:translateX(0)} to{transform:translateX(-840px)} }
-    @keyframes scanmove { from{transform:translateY(0)} to{transform:translateY(424px)} }
-    @keyframes glowpulse { 0%,100%{opacity:.16} 50%{opacity:.4} }
-    @keyframes glowslide { 0%,100%{transform:translate(0,0)} 50%{transform:translate(30px,-20px)} }
-    @keyframes dotpulse { 0%,100%{opacity:.25} 50%{opacity:1} }
-    @keyframes fadeline { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:none} }
-    @keyframes drift { 0%,100%{transform:translate(0,0)} 50%{transform:translate(6px,-10px)} }
-    .t{opacity:0;animation:type 17s linear infinite}
-    .pt{fill:#94a3b8}.pc{fill:#22d3ee}.oc{fill:#f1f5f9}.ob{fill:#7dd3fc}
-    .blink{animation:blinker 1.1s steps(1) infinite}
-    .cur{animation:caretRun 17s linear infinite}
-    .grid{animation:gridmove 18s linear infinite}
-    .scan{animation:scanmove 12s linear infinite}
-    .f1{opacity:0;animation:fadeline .4s ease-out .5s forwards}
-    .f2{opacity:0;animation:fadeline .4s ease-out 1s forwards}
-    .d1{animation:dotpulse 1.5s ease-in-out .2s infinite}
-    .d2{animation:dotpulse 1.5s ease-in-out .55s infinite}
-    .d3{animation:dotpulse 1.5s ease-in-out .9s infinite}
-    .pulse{animation:glowpulse 7s ease-in-out infinite}
-    .slide{animation:glowslide 14s ease-in-out infinite}
-    .p1{animation:drift 9s ease-in-out infinite}
-    .p2{animation:drift 12s ease-in-out .8s infinite}
-    .p3{animation:drift 16s ease-in-out 1.6s infinite}
-    .p4{animation:drift 20s ease-in-out 2.4s infinite}
-</style>
+    @keyframes type { 0%,89% { opacity: 1 } 97%,100% { opacity: 0 } }
+    @keyframes blink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
+    @keyframes gridmove { from { transform: translateX(0) } to { transform: translateX(-840px) } }
+    @keyframes scanmove { from { transform: translateY(0) } to { transform: translateY(420px) } }
+    @keyframes glowpulse { 0%,100% { opacity: .14 } 50% { opacity: .34 } }
+    @keyframes glowslide { 0%,100% { transform: translate(0,0) } 50% { transform: translate(26px,-16px) } }
+    @keyframes dotpulse { 0%,100% { opacity: .3 } 50% { opacity: 1 } }
+    @keyframes drift { 0%,100% { transform: translate(0,0) } 50% { transform: translate(5px,-9px) } }
+    .t { opacity: 0; animation: type 13s linear infinite }
+    .pt { fill: #94a3b8 }
+    .pc { fill: #22d3ee }
+    .oc { fill: #dbe4ee }
+    .ob { fill: #7dd3fc }
+    .blink { animation: blink 1.1s steps(1) infinite }
+    .grid { animation: gridmove 18s linear infinite }
+    .scan { animation: scanmove 12s linear infinite }
+    .pulse { animation: glowpulse 6s ease-in-out infinite }
+    .slide { animation: glowslide 13s ease-in-out infinite }
+    .d1 { animation: dotpulse 1.5s ease-in-out .15s infinite }
+    .d2 { animation: dotpulse 1.5s ease-in-out .45s infinite }
+    .d3 { animation: dotpulse 1.5s ease-in-out .75s infinite }
+    .p1 { animation: drift 9s ease-in-out infinite }
+    .p2 { animation: drift 12s ease-in-out .8s infinite }
+    .p3 { animation: drift 16s ease-in-out 1.6s infinite }
+    .p4 { animation: drift 20s ease-in-out 2.4s infinite }
+    .fade { animation: fadein .35s ease-out forwards }
+    @keyframes fadein { from { opacity: 0 } to { opacity: 1 } }
+  </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#0d1420"/><stop offset="1" stop-color="#090f16"/>
     </linearGradient>
     <radialGradient id="cyanGlow" cx="0.5" cy="0.2" r="0.7">
-      <stop offset="0" stop-color="#0e7490" stop-opacity=".5"/><stop offset="1" stop-color="#0e7490" stop-opacity="0"/>
+      <stop offset="0" stop-color="#0e7490" stop-opacity=".55"/><stop offset="1" stop-color="#0e7490" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="frameGlow" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#22d3ee" stop-opacity=".5"/><stop offset="1" stop-color="#22d3ee" stop-opacity=".06"/>
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".55"/><stop offset="1" stop-color="#22d3ee" stop-opacity=".08"/>
     </linearGradient>
     <pattern id="gridpat" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0L0 0 0 28" fill="none" stroke="#22314a" stroke-width="1" opacity=".7"/>
+      <path d="M28 0L0 0 0 28" fill="none" stroke="#22314a" stroke-width="1" opacity=".6"/>
     </pattern>
     <pattern id="scan" x="0" y="0" width="320" height="4" patternUnits="userSpaceOnUse">
       <rect width="320" height="1.2" fill="#94a3b8" opacity=".05"/>
     </pattern>
-    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="6"/></filter>
     <filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
-    <clipPath id="termClip"><rect x="60" y="42" width="720" height="374" rx="14"/></clipPath>
+    <clipPath id="termClip"><rect x="60" y="42" width="720" height="378" rx="14"/></clipPath>
   </defs>
 
-  <rect width="840" height="460" rx="18" fill="url(#bg)"/>
-  <rect width="840" height="460" rx="18" fill="url(#cyanGlow)" class="pulse"/>
+  <rect width="840" height="464" rx="18" fill="url(#bg)"/>
+  <rect width="840" height="464" rx="18" fill="url(#cyanGlow)" class="pulse"/>
 
   <g class="slide pulse">
-    <ellipse cx="620" cy="120" rx="220" ry="140" fill="#0e7490" opacity=".16" filter="url(#soft)"/>
+    <ellipse cx="620" cy="120" rx="220" ry="140" fill="#0e7490" opacity=".18" filter="url(#soft)"/>
   </g>
 
   <g class="pulse">
-    <text x="812" y="432" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="330" font-weight="700" fill="#38bdf8" opacity=".1" text-anchor="end">A</text>
+    <text x="812" y="438" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="330" font-weight="700" fill="#38bdf8" opacity=".1" text-anchor="end">A</text>
   </g>
 
   <g class="grid">
-    <rect x="-840" y="0" width="1680" height="460" fill="url(#gridpat)"/>
+    <rect x="-840" y="0" width="1680" height="464" fill="url(#gridpat)"/>
   </g>
 
   <g class="p1"><circle cx="112" cy="76" r="2.1" fill="#60a5fa" opacity="0.5"/></g>
-<g class="p2"><circle cx="706" cy="110" r="1.6" fill="#60a5fa" opacity="0.45"/></g>
-<g class="p3"><circle cx="640" cy="322" r="2.0" fill="#60a5fa" opacity="0.4"/></g>
-<g class="p4"><circle cx="170" cy="330" r="1.5" fill="#a78bfa" opacity="0.5"/></g>
-<g class="p1"><circle cx="300" cy="60" r="1.8" fill="#22d3ee" opacity="0.35"/></g>
-<g class="p2"><circle cx="500" cy="84" r="1.4" fill="#a78bfa" opacity="0.4"/></g>
-<g class="p3"><circle cx="760" cy="240" r="1.7" fill="#60a5fa" opacity="0.45"/></g>
-<g class="p4"><circle cx="90" cy="210" r="1.5" fill="#22d3ee" opacity="0.4"/></g>
-<g class="p1"><circle cx="230" cy="250" r="1.9" fill="#a78bfa" opacity="0.35"/></g>
-<g class="p2"><circle cx="440" cy="320" r="1.6" fill="#a78bfa" opacity="0.45"/></g>
-<g class="p3"><circle cx="580" cy="60" r="1.8" fill="#60a5fa" opacity="0.35"/></g>
-<g class="p4"><circle cx="360" cy="120" r="1.5" fill="#22d3ee" opacity="0.4"/></g>
-<g class="p1"><circle cx="670" cy="170" r="2.0" fill="#60a5fa" opacity="0.5"/></g>
-<g class="p2"><circle cx="520" cy="340" r="1.6" fill="#60a5fa" opacity="0.4"/></g>
-<g class="p3"><circle cx="200" cy="140" r="1.7" fill="#a78bfa" opacity="0.35"/></g>
-<g class="p4"><circle cx="60" cy="380" r="1.5" fill="#22d3ee" opacity="0.45"/></g>
-<g class="p1"><circle cx="790" cy="380" r="1.9" fill="#60a5fa" opacity="0.4"/></g>
-<g class="p2"><circle cx="330" cy="380" r="1.6" fill="#22d3ee" opacity="0.35"/></g>
-<g class="p3"><circle cx="450" cy="60" r="1.7" fill="#22d3ee" opacity="0.45"/></g>
-<g class="p4"><circle cx="620" cy="388" r="1.5" fill="#a78bfa" opacity="0.5"/></g>
+  <g class="p2"><circle cx="706" cy="110" r="1.6" fill="#60a5fa" opacity="0.45"/></g>
+  <g class="p3"><circle cx="640" cy="322" r="2.0" fill="#60a5fa" opacity="0.4"/></g>
+  <g class="p4"><circle cx="170" cy="330" r="1.5" fill="#a78bfa" opacity="0.5"/></g>
+  <g class="p1"><circle cx="300" cy="60" r="1.8" fill="#22d3ee" opacity="0.35"/></g>
+  <g class="p2"><circle cx="500" cy="84" r="1.4" fill="#a78bfa" opacity="0.4"/></g>
+  <g class="p3"><circle cx="760" cy="240" r="1.7" fill="#60a5fa" opacity="0.45"/></g>
+  <g class="p4"><circle cx="90" cy="210" r="1.5" fill="#22d3ee" opacity="0.4"/></g>
+  <g class="p1"><circle cx="230" cy="250" r="1.9" fill="#a78bfa" opacity="0.35"/></g>
+  <g class="p2"><circle cx="440" cy="318" r="1.6" fill="#a78bfa" opacity="0.45"/></g>
+  <g class="p3"><circle cx="580" cy="60" r="1.8" fill="#60a5fa" opacity="0.35"/></g>
+  <g class="p4"><circle cx="360" cy="120" r="1.5" fill="#22d3ee" opacity="0.4"/></g>
+  <g class="p1"><circle cx="670" cy="170" r="2.0" fill="#60a5fa" opacity="0.5"/></g>
+  <g class="p2"><circle cx="520" cy="336" r="1.6" fill="#60a5fa" opacity="0.4"/></g>
+  <g class="p3"><circle cx="200" cy="140" r="1.7" fill="#a78bfa" opacity="0.35"/></g>
+  <g class="p4"><circle cx="60" cy="380" r="1.5" fill="#22d3ee" opacity="0.45"/></g>
+  <g class="p1"><circle cx="790" cy="386" r="1.9" fill="#60a5fa" opacity="0.4"/></g>
+  <g class="p2"><circle cx="330" cy="384" r="1.6" fill="#22d3ee" opacity="0.35"/></g>
+  <g class="p3"><circle cx="450" cy="60" r="1.7" fill="#22d3ee" opacity="0.45"/></g>
+  <g class="p4"><circle cx="620" cy="392" r="1.5" fill="#a78bfa" opacity="0.5"/></g>
 
-  <rect width="840" height="460" rx="18" filter="url(#noise)" opacity="0.045"/>
+  <rect width="840" height="464" rx="18" filter="url(#noise)" opacity="0.045"/>
 
-  <g>
-    <rect x="60" y="42" width="720" height="374" rx="14" fill="#0f1720" stroke="#233247" stroke-width="1.2"/>
-    <rect x="60" y="42" width="720" height="374" rx="14" fill="none" stroke="url(#frameGlow)" stroke-width="1.2"/>
+  <rect x="60" y="42" width="720" height="378" rx="14" fill="#0f1720" stroke="#233247" stroke-width="1.2"/>
+  <rect x="60" y="42" width="720" height="378" rx="14" fill="none" stroke="url(#frameGlow)" stroke-width="1.2"/>
 
-    <rect x="60" y="42" width="720" height="40" rx="14" fill="#111c2b"/>
-    <rect x="60" y="66" width="720" height="16" fill="#111c2b"/>
-    <circle cx="84" cy="62" r="6" fill="#ff5f56"/>
-    <circle cx="104" cy="62" r="6" fill="#ffbd2e"/>
-    <circle cx="124" cy="62" r="6" fill="#27c93f"/>
-    <text x="420" y="67" text-anchor="middle" fill="#64748b" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="13">arnav27-22 — zsh — 80×24</text>
+  <rect x="60" y="42" width="720" height="40" rx="14" fill="#111c2b"/>
+  <rect x="60" y="66" width="720" height="16" fill="#111c2b"/>
+  <circle cx="84" cy="62" r="6" fill="#ff5f56"/>
+  <circle cx="104" cy="62" r="6" fill="#ffbd2e"/>
+  <circle cx="124" cy="62" r="6" fill="#27c93f"/>
+  <text x="420" y="67" text-anchor="middle" fill="#64748b" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="13">arnav27-22 — zsh — 80×24</text>
 
-    <g class="scan" clip-path="url(#termClip)">
-      <rect x="60" y="-374" width="720" height="374" fill="url(#scan)"/>
-    </g>
-
-    <g font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="16">
-      <g fill="#0e7490" opacity=".9" filter="url(#soft)">
-        <text x="100" y="118">        /\</text><text x="100" y="138">       /  \</text><text x="100" y="158">      / /\ \</text><text x="100" y="178">     / /  \ \</text><text x="100" y="198">    / /____\ \</text><text x="100" y="218">   /__________\</text>
-      </g>
-      <g fill="#22d3ee" class="f1">
-        <text x="100" y="118">        /\</text><text x="100" y="138">       /  \</text><text x="100" y="158">      / /\ \</text><text x="100" y="178">     / /  \ \</text><text x="100" y="198">    / /____\ \</text><text x="100" y="218">   /__________\</text>
-      </g>
-      <text x="100" y="262" fill="#475569" font-size="12" class="f2"># a-frame / arnav-stack</text>
-    </g>
-
-    <g font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="15">
-      <text x="330" y="104" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="15"><tspan class="pc" style="animation-delay:0.60s">$</tspan><tspan class="pt" style="animation-delay:0.66s"> </tspan><tspan class="pt" style="animation-delay:0.71s">w</tspan><tspan class="pt" style="animation-delay:0.77s">h</tspan><tspan class="pt" style="animation-delay:0.82s">o</tspan><tspan class="pt" style="animation-delay:0.88s">a</tspan><tspan class="pt" style="animation-delay:0.93s">m</tspan><tspan class="pt" style="animation-delay:0.99s">i</tspan></text>
-<text x="330" y="126" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="15"><tspan class="oc" style="animation-delay:1.50s">a</tspan><tspan class="oc" style="animation-delay:1.55s">r</tspan><tspan class="oc" style="animation-delay:1.61s">n</tspan><tspan class="oc" style="animation-delay:1.66s">a</tspan><tspan class="oc" style="animation-delay:1.72s">v</tspan><tspan class="oc" style="animation-delay:1.77s">2</tspan><tspan class="oc" style="animation-delay:1.83s">7</tspan><tspan class="oc" style="animation-delay:1.88s">-</tspan><tspan class="oc" style="animation-delay:1.94s">2</tspan><tspan class="oc" style="animation-delay:1.99s">2</tspan></text>
-<text x="330" y="154" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="15"><tspan class="pc" style="animation-delay:2.80s">$</tspan><tspan class="pt" style="animation-delay:2.85s"> </tspan><tspan class="pt" style="animation-delay:2.91s">e</tspan><tspan class="pt" style="animation-delay:2.97s">c</tspan><tspan class="pt" style="animation-delay:3.02s">h</tspan><tspan class="pt" style="animation-delay:3.08s">o</tspan><tspan class="pt" style="animation-delay:3.13s"> </tspan><tspan class="pt" style="animation-delay:3.19s">$</tspan><tspan class="pt" style="animation-delay:3.24s">N</tspan><tspan class="pt" style="animation-delay:3.30s">A</tspan><tspan class="pt" style="animation-delay:3.35s">M</tspan><tspan class="pt" style="animation-delay:3.41s">E</tspan></text>
-<text x="330" y="176" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="15"><tspan class="oc" style="animation-delay:4.20s;animation:type 17s linear infinite;font-weight:700">A</tspan><tspan class="oc" style="animation-delay:4.25s;animation:type 17s linear infinite;font-weight:700">R</tspan><tspan class="oc" style="animation-delay:4.31s;animation:type 17s linear infinite;font-weight:700">N</tspan><tspan class="oc" style="animation-delay:4.36s;animation:type 17s linear infinite;font-weight:700">A</tspan><tspan class="oc" style="animation-delay:4.42s;animation:type 17s linear infinite;font-weight:700">V</tspan><tspan class="oc" style="animation-delay:4.47s;animation:type 17s linear infinite;font-weight:700"> </tspan><tspan class="oc" style="animation-delay:4.53s;animation:type 17s linear infinite;font-weight:700">P</tspan><tspan class="oc" style="animation-delay:4.58s;animation:type 17s linear infinite;font-weight:700">A</tspan><tspan class="oc" style="animation-delay:4.64s;animation:type 17s linear infinite;font-weight:700">G</tspan><tspan class="oc" style="animation-delay:4.69s;animation:type 17s linear infinite;font-weight:700">A</tspan><tspan class="oc" style="animation-delay:4.75s;animation:type 17s linear infinite;font-weight:700">R</tspan><tspan class="oc" style="animation-delay:4.80s;animation:type 17s linear infinite;font-weight:700">E</tspan></text>
-<text x="330" y="204" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="15"><tspan class="pc" style="animation-delay:5.60s">$</tspan><tspan class="pt" style="animation-delay:5.65s"> </tspan><tspan class="pt" style="animation-delay:5.71s">g</tspan><tspan class="pt" style="animation-delay:5.76s">i</tspan><tspan class="pt" style="animation-delay:5.82s">t</tspan><tspan class="pt" style="animation-delay:5.87s"> </tspan><tspan class="pt" style="animation-delay:5.93s">s</tspan><tspan class="pt" style="animation-delay:5.98s">t</tspan><tspan class="pt" style="animation-delay:6.04s">a</tspan><tspan class="pt" style="animation-delay:6.09s">t</tspan><tspan class="pt" style="animation-delay:6.15s">u</tspan><tspan class="pt" style="animation-delay:6.20s">s</tspan></text>
-<text x="330" y="226" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="15"><tspan class="oc" style="animation-delay:7.00s">b</tspan><tspan class="oc" style="animation-delay:7.05s">u</tspan><tspan class="oc" style="animation-delay:7.11s">i</tspan><tspan class="oc" style="animation-delay:7.16s">l</tspan><tspan class="oc" style="animation-delay:7.22s">d</tspan><tspan class="oc" style="animation-delay:7.27s">i</tspan><tspan class="oc" style="animation-delay:7.33s">n</tspan><tspan class="oc" style="animation-delay:7.38s">g</tspan><tspan class="d1" fill="#34d399" style="animation-delay:7.44s;animation:type 17s linear 0s infinite,dotpulse 1.5s ease-in-out 0.2s infinite">.</tspan><tspan class="d2" fill="#34d399" style="animation-delay:7.50s;animation:type 17s linear 0s infinite,dotpulse 1.5s ease-in-out 0.55s infinite">.</tspan><tspan class="d3" fill="#34d399" style="animation-delay:7.55s;animation:type 17s linear 0s infinite,dotpulse 1.5s ease-in-out 0.9s infinite">.</tspan></text>
-<text x="330" y="254" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="15"><tspan class="pc" style="animation-delay:8.60s">$</tspan><tspan class="pt" style="animation-delay:8.65s"> </tspan><tspan class="pt" style="animation-delay:8.71s">f</tspan><tspan class="pt" style="animation-delay:8.76s">o</tspan><tspan class="pt" style="animation-delay:8.82s">c</tspan><tspan class="pt" style="animation-delay:8.87s">u</tspan><tspan class="pt" style="animation-delay:8.93s">s</tspan></text>
-<text x="330" y="276" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="15"><tspan class="ob" style="animation-delay:9.40s">a</tspan><tspan class="ob" style="animation-delay:9.46s">i</tspan><tspan class="ob" style="animation-delay:9.51s"> </tspan><tspan class="ob" style="animation-delay:9.56s">·</tspan><tspan class="ob" style="animation-delay:9.62s"> </tspan><tspan class="ob" style="animation-delay:9.67s">w</tspan><tspan class="ob" style="animation-delay:9.73s">e</tspan><tspan class="ob" style="animation-delay:9.78s">b</tspan><tspan class="ob" style="animation-delay:9.84s"> </tspan><tspan class="ob" style="animation-delay:9.89s">·</tspan><tspan class="ob" style="animation-delay:9.95s"> </tspan><tspan class="ob" style="animation-delay:10.00s">s</tspan><tspan class="ob" style="animation-delay:10.06s">o</tspan><tspan class="ob" style="animation-delay:10.11s">f</tspan><tspan class="ob" style="animation-delay:10.17s">t</tspan><tspan class="ob" style="animation-delay:10.22s">w</tspan><tspan class="ob" style="animation-delay:10.28s">a</tspan><tspan class="ob" style="animation-delay:10.33s">r</tspan><tspan class="ob" style="animation-delay:10.39s">e</tspan><tspan class="ob" style="animation-delay:10.44s"> </tspan><tspan class="ob" style="animation-delay:10.50s">·</tspan><tspan class="ob" style="animation-delay:10.55s"> </tspan><tspan class="ob" style="animation-delay:10.61s">a</tspan><tspan class="ob" style="animation-delay:10.66s">u</tspan><tspan class="ob" style="animation-delay:10.72s">t</tspan><tspan class="ob" style="animation-delay:10.77s">o</tspan><tspan class="ob" style="animation-delay:10.83s">m</tspan><tspan class="ob" style="animation-delay:10.88s">a</tspan><tspan class="ob" style="animation-delay:10.94s">t</tspan><tspan class="ob" style="animation-delay:10.99s">i</tspan><tspan class="ob" style="animation-delay:11.05s">o</tspan><tspan class="ob" style="animation-delay:11.10s">n</tspan></text>
-    </g>
-
-    <g class="cur"><rect x="330" y="106" width="9" height="16" fill="#22d3ee" class="blink"/></g>
-
-    <rect x="61" y="380" width="718" height="35" fill="#101a28"/>
-    <text x="78" y="404" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="12" fill="#475569">
-      <tspan fill="#34d399">●</tspan> main* <tspan fill="#facc15" dx="12">●</tspan> git <tspan fill="#22d3ee" dx="12">●</tspan> ts ~6.0 <tspan fill="#34d399" dx="14">●</tspan> sync online
-    </text>
-    <text x="762" y="404" text-anchor="end" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="12" fill="#475569">UTF-8 · zsh</text>
+  <g class="scan" clip-path="url(#termClip)">
+    <rect x="60" y="-378" width="720" height="378" fill="url(#scan)"/>
   </g>
+
+  <!-- ASCII glyph: symmetrical hexagonal node -->
+  <g opacity="0.42" filter="url(#soft)">
+    <g stroke="#0e7490" stroke-width="1.4" fill="none" transform="translate(120,168)">
+      <path d="M0,-54 L46,-27 L46,27 L0,54 L-46,27 L-46,-27 Z"/>
+      <path d="M0,-30 L26,-15 L26,15 L0,30 L-26,15 L-26,-15 Z"/>
+      <path d="M-46,0 L-26,0 M26,0 L46,0 M0,-54 L0,-30 M0,30 L0,54"/>
+    </g>
+  </g>
+  <g stroke="#22d3ee" stroke-width="1.6" fill="none" transform="translate(120,168)">
+    <path d="M0,-54 L46,-27 L46,27 L0,54 L-46,27 L-46,-27 Z"/>
+    <path d="M0,-30 L26,-15 L26,15 L0,30 L-26,15 L-26,-15 Z"/>
+    <path d="M-46,0 L-26,0 M26,0 L46,0 M0,-54 L0,-30 M0,30 L0,54"/>
+    <circle cx="0" cy="0" r="4.6" fill="#22d3ee" fill-opacity=".95"/>
+    <g fill="#38bdf8">
+      <path d="M0,-4 L2.4,-1 L2.4,2.6 L0,4.4 L-2.4,2.6 L-2.4,-1 Z" opacity=".8"/>
+    </g>
+  </g>
+  <text x="120" y="252" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="11" fill="#64748b" class="fade"># dev-core :: node</text>
+
+  <g font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="15">
+    <text x="330" y="110"><tspan class="t pc" style="animation-delay:0.50s">$</tspan><tspan class="t pt" style="animation-delay:0.57s"> </tspan><tspan class="t pt" style="animation-delay:0.63s">w</tspan><tspan class="t pt" style="animation-delay:0.70s">h</tspan><tspan class="t pt" style="animation-delay:0.76s">o</tspan><tspan class="t pt" style="animation-delay:0.83s">a</tspan><tspan class="t pt" style="animation-delay:0.89s">m</tspan><tspan class="t pt" style="animation-delay:0.96s">i</tspan></text>
+    <text x="330" y="134" font-size="15"><tspan class="t oc" style="animation-delay:1.55s;font-weight:600">a</tspan><tspan class="t oc" style="animation-delay:1.60s;font-weight:600">r</tspan><tspan class="t oc" style="animation-delay:1.66s;font-weight:600">n</tspan><tspan class="t oc" style="animation-delay:1.71s;font-weight:600">a</tspan><tspan class="t oc" style="animation-delay:1.77s;font-weight:600">v</tspan><tspan class="t oc" style="animation-delay:1.82s;font-weight:600">2</tspan><tspan class="t oc" style="animation-delay:1.88s;font-weight:600">7</tspan><tspan class="t oc" style="animation-delay:1.93s;font-weight:600">-</tspan><tspan class="t oc" style="animation-delay:1.99s;font-weight:600">2</tspan><tspan class="t oc" style="animation-delay:2.04s;font-weight:600">2</tspan></text>
+
+    <text x="330" y="166"><tspan class="t pc" style="animation-delay:2.80s">$</tspan><tspan class="t pt" style="animation-delay:2.85s"> </tspan><tspan class="t pt" style="animation-delay:2.92s">e</tspan><tspan class="t pt" style="animation-delay:2.98s">c</tspan><tspan class="t pt" style="animation-delay:3.05s">h</tspan><tspan class="t pt" style="animation-delay:3.11s">o</tspan><tspan class="t pt" style="animation-delay:3.18s"> </tspan><tspan class="t pt" style="animation-delay:3.24s">$</tspan><tspan class="t pt" style="animation-delay:3.31s">N</tspan><tspan class="t pt" style="animation-delay:3.37s">A</tspan><tspan class="t pt" style="animation-delay:3.44s">M</tspan><tspan class="t pt" style="animation-delay:3.50s">E</tspan></text>
+    <text x="330" y="192" font-size="20" font-weight="700" letter-spacing="1"><tspan class="t oc" style="animation-delay:4.30s;fill:#7dd3fc">A</tspan><tspan class="t oc" style="animation-delay:4.36s;fill:#7dd3fc">R</tspan><tspan class="t oc" style="animation-delay:4.42s;fill:#7dd3fc">N</tspan><tspan class="t oc" style="animation-delay:4.47s;fill:#7dd3fc">A</tspan><tspan class="t oc" style="animation-delay:4.53s;fill:#7dd3fc">V</tspan><tspan class="t oc" style="animation-delay:4.58s;fill:#7dd3fc"> </tspan><tspan class="t oc" style="animation-delay:4.64s;fill:#7dd3fc">P</tspan><tspan class="t oc" style="animation-delay:4.69s;fill:#7dd3fc">A</tspan><tspan class="t oc" style="animation-delay:4.75s;fill:#7dd3fc">G</tspan><tspan class="t oc" style="animation-delay:4.80s;fill:#7dd3fc">A</tspan><tspan class="t oc" style="animation-delay:4.86s;fill:#7dd3fc">R</tspan><tspan class="t oc" style="animation-delay:4.91s;fill:#7dd3fc">E</tspan></text>
+
+    <text x="330" y="224"><tspan class="t pc" style="animation-delay:5.90s">$</tspan><tspan class="t pt" style="animation-delay:5.95s"> </tspan><tspan class="t pt" style="animation-delay:6.02s">s</tspan><tspan class="t pt" style="animation-delay:6.08s">t</tspan><tspan class="t pt" style="animation-delay:6.15s">a</tspan><tspan class="t pt" style="animation-delay:6.21s">t</tspan><tspan class="t pt" style="animation-delay:6.28s">u</tspan><tspan class="t pt" style="animation-delay:6.34s">s</tspan></text>
+    <text x="330" y="248"><tspan class="d1" fill="#34d399" style="animation-delay:7.10s">●</tspan><tspan class="t oc" fill="#34d399" style="animation-delay:7.16s;font-weight:600"> </tspan><tspan class="t oc" fill="#34d399" style="animation-delay:7.22s;font-weight:600">O</tspan><tspan class="t oc" fill="#34d399" style="animation-delay:7.28s;font-weight:600">N</tspan><tspan class="t oc" fill="#34d399" style="animation-delay:7.34s;font-weight:600">L</tspan><tspan class="t oc" fill="#34d399" style="animation-delay:7.40s;font-weight:600">I</tspan><tspan class="t oc" fill="#34d399" style="animation-delay:7.46s;font-weight:600">N</tspan><tspan class="t oc" fill="#34d399" style="animation-delay:7.52s;font-weight:600">E</tspan><tspan class="t pt" fill="#34d399" style="animation-delay:7.58s;font-weight:600"> </tspan><tspan class="t pt" fill="#34d399" style="animation-delay:7.64s;font-weight:600">·</tspan><tspan class="t pt" fill="#34d399" style="animation-delay:7.70s;font-weight:600"> </tspan><tspan class="t oc" fill="#34d399" style="animation-delay:7.76s;font-weight:600">S</tspan><tspan class="t oc" fill="#34d399" style="animation-delay:7.82s;font-weight:600">Y</tspan><tspan class="t oc" fill="#34d399" style="animation-delay:7.88s;font-weight:600">N</tspan><tspan class="t oc" fill="#34d399" style="animation-delay:7.94s;font-weight:600">C</tspan><tspan class="t oc" fill="#34d399" style="animation-delay:8.00s;font-weight:600">E</tspan><tspan class="t oc" fill="#34d399" style="animation-delay:8.06s;font-weight:600">D</tspan></text>
+
+    <text x="330" y="280"><tspan class="t pc" style="animation-delay:8.70s">$</tspan><tspan class="t pt" style="animation-delay:8.75s"> </tspan><tspan class="t pt" style="animation-delay:8.82s">f</tspan><tspan class="t pt" style="animation-delay:8.88s">o</tspan><tspan class="t pt" style="animation-delay:8.95s">c</tspan><tspan class="t pt" style="animation-delay:9.01s">u</tspan><tspan class="t pt" style="animation-delay:9.08s">s</tspan></text>
+    <text x="330" y="304"><tspan class="t ob" style="animation-delay:9.55s">a</tspan><tspan class="t ob" style="animation-delay:9.61s">i</tspan><tspan class="t ob" style="animation-delay:9.66s"> </tspan><tspan class="t ob" style="animation-delay:9.71s">·</tspan><tspan class="t ob" style="animation-delay:9.77s"> </tspan><tspan class="t ob" style="animation-delay:9.82s">w</tspan><tspan class="t ob" style="animation-delay:9.88s">e</tspan><tspan class="t ob" style="animation-delay:9.93s">b</tspan><tspan class="t ob" style="animation-delay:9.99s"> </tspan><tspan class="t ob" style="animation-delay:10.04s">·</tspan><tspan class="t ob" style="animation-delay:10.10s"> </tspan><tspan class="t ob" style="animation-delay:10.15s">s</tspan><tspan class="t ob" style="animation-delay:10.21s">o</tspan><tspan class="t ob" style="animation-delay:10.26s">f</tspan><tspan class="t ob" style="animation-delay:10.32s">t</tspan><tspan class="t ob" style="animation-delay:10.37s">w</tspan><tspan class="t ob" style="animation-delay:10.43s">a</tspan><tspan class="t ob" style="animation-delay:10.48s">r</tspan><tspan class="t ob" style="animation-delay:10.54s">e</tspan><tspan class="t ob" style="animation-delay:10.59s"> </tspan><tspan class="t ob" style="animation-delay:10.65s">·</tspan><tspan class="t ob" style="animation-delay:10.70s"> </tspan><tspan class="t ob" style="animation-delay:10.76s">a</tspan><tspan class="t ob" style="animation-delay:10.81s">u</tspan><tspan class="t ob" style="animation-delay:10.87s">t</tspan><tspan class="t ob" style="animation-delay:10.92s">o</tspan><tspan class="t ob" style="animation-delay:10.98s">m</tspan><tspan class="t ob" style="animation-delay:11.03s">a</tspan><tspan class="t ob" style="animation-delay:11.09s">t</tspan><tspan class="t ob" style="animation-delay:11.14s">i</tspan><tspan class="t ob" style="animation-delay:11.20s">o</tspan><tspan class="t ob" style="animation-delay:11.25s">n</tspan></text>
+  </g>
+
+  <rect x="61" y="384" width="718" height="35" fill="#101a28"/>
+  <text x="78" y="406" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="12" fill="#64748b">
+    <tspan fill="#34d399">●</tspan> <tspan fill="#94a3b8">main</tspan>
+    <tspan fill="#facc15" dx="18">●</tspan> <tspan fill="#94a3b8">git</tspan>
+    <tspan fill="#22d3ee" dx="18">●</tspan> <tspan fill="#94a3b8">sync</tspan>
+    <tspan dx="18" fill="#64748b">UTF-8</tspan>
+    <tspan dx="18" fill="#64748b">zsh</tspan>
+    <tspan dx="26" fill="#3b4c63">·</tspan>
+    <tspan dx="12" fill="#64748b">80×24</tspan>
+  </text>
+  <text x="762" y="406" text-anchor="end" font-family="'JetBrains Mono','Cascadia Code',Consolas,monospace" font-size="12" fill="#475569" class="blink">▌</text>
 </svg>
