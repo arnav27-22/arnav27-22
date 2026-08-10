@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-08-10T16:56:56.145Z",
+  "source": "github-api",
+  "user": {
+    "login": "arnav27-22",
+    "name": "ARNAV PAGARE",
+    "followers": 0,
+    "following": 2,
+    "publicRepos": 6,
+    "avatarUrl": "https://avatars.githubusercontent.com/u/238826954?v=4",
+    "createdAt": "2025-10-18"
+  },
+  "stats": {
+    "repos": 6,
+    "stars": 1,
+    "forks": 0,
+    "followers": 0,
+    "following": 2,
+    "topLangs": [
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Dockerfile"
+    ]
+  },
+  "commits": null,
+  "lastPush": "arom-studio · 2026-07-29",
+  "empties": [
+    {
+      "name": "Om-ai",
+      "url": "https://github.com/arnav27-22/Om-ai"
+    },
+    {
+      "name": "YT-Download",
+      "url": "https://github.com/arnav27-22/YT-Download"
+    },
+    {
+      "name": "Om",
+      "url": "https://github.com/arnav27-22/Om"
+    }
+  ],
+  "projects": [
+    {
+      "name": "arom-studio",
+      "description": null,
+      "curated": "Web design & development agency platform: marketing experience and admin dashboard in React 19 + Vite, backed by an Express 5 API with Prisma + PostgreSQL, Redis caching, S3 / Vercel Blob storage, email automation, JWT auth, document generation, analytics, CI/CD and Docker. Deployed on Vercel.",
+      "language": "TypeScript",
+      "languages": null,
+      "stars": 1,
+      "forks": 0,
+      "pushedAt": "2026-07-29T18:07:30Z",
+      "homepage": "https://arom-studio.vercel.app",
+      "size": 18602,
+      "hasReadme": false,
+      "score": 91,
+      "status": "FLAGSHIP"
+    },
+    {
+      "name": "Share-FIle",
+      "description": null,
+      "curated": "Secure file-sharing platform on Next.js 15 + React 19: password-protected links, expiration timers, custom aliases, AES-256 encryption, WebRTC peer-to-peer transfer, multi-cloud storage (S3 / R2 / B2) and QR download codes — glassmorphism UI with Framer Motion.",
+      "language": "TypeScript",
+      "languages": null,
+      "stars": 0,
+      "forks": 0,
+      "pushedAt": "2026-06-29T11:03:23Z",
+      "homepage": null,
+      "size": 66,
+      "hasReadme": false,
+      "score": 40.165,
+      "status": "IN DEVELOPMENT"
+    }
+  ]
+}

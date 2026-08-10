@@ -1,0 +1,33 @@
+name: update profile data
+
+on:
+  schedule:
+    - cron: '17 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-update
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync profile data from the GitHub API
+        run: node scripts/update-profile.mjs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit changes (only when content actually changed)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(profile): sync GitHub data'
+          commit_author: 'arnav27-22 <238826954+arnav27-22@users.noreply.github.com>'
+          file_pattern: README.md generated/

@@ -1,0 +1,38 @@
+name: contribution snake
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate contribution snake from real contribution data
+        uses: platane/snk@v3
+        with:
+          github_user_name: arnav27-22
+          outputs: |
+            assets/contribution-snake.svg?palette=github-dark
+            assets/contribution-snake.gif?palette=github-dark
+
+      - name: Commit snake (only when the images changed)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(profile): refresh contribution animation'
+          commit_author: 'arnav27-22 <238826954+arnav27-22@users.noreply.github.com>'
+          file_pattern: assets/contribution-snake.svg assets/contribution-snake.gif

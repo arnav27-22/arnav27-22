@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="170" viewBox="0 0 840 170" role="img" aria-labelledby="foot-title foot-desc">
+  <title id="foot-title">ARNAV PAGARE — @arnav27-22</title>
+  <desc id="foot-desc">Animated footer for the GitHub profile of ARNAV PAGARE (@arnav27-22). Thanks for exploring.</desc>
+  <style>
+    @keyframes blink { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
+    @keyframes wave1 { from { transform: translateX(0) } to { transform: translateX(-840px) } }
+    @keyframes wave2 { from { transform: translateX(-420px) } to { transform: translateX(-1260px) } }
+    @keyframes gentle { 0%,100% { opacity: .5 } 50% { opacity: .9 } }
+    @keyframes drift { 0% { transform: translate(0,0) } 50% { transform: translate(8px,-12px) } 100% { transform: translate(0,0) } }
+    @keyframes band { 0% { transform: translateX(-420px); opacity: 0 } 15% { opacity: .35 } 55% { opacity: .12 } 100% { transform: translateX(840px); opacity: 0 } }
+    .blink { animation: blink 1.2s steps(1) infinite }
+    .w1 { animation: wave1 14s linear infinite }
+    .w2 { animation: wave2 20s linear infinite }
+    .gentle { animation: gentle 4s ease-in-out infinite }
+    .drift1 { animation: drift 9s ease-in-out infinite }
+    .drift2 { animation: drift 12s ease-in-out 1.2s infinite }
+    .band { animation: band 14s ease-in-out infinite }
+  </style>
+  <defs>
+    <linearGradient id="footBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f1720"/>
+      <stop offset="1" stop-color="#0b1117"/>
+    </linearGradient>
+    <linearGradient id="footStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".3"/>
+      <stop offset=".5" stop-color="#60a5fa" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity=".3"/>
+    </linearGradient>
+    <linearGradient id="bandGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7dd3fc" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#7dd3fc" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#7dd3fc" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="footClip">
+      <rect width="840" height="170" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <rect width="840" height="170" rx="16" fill="url(#footBg)" stroke="url(#footStroke)" stroke-width="1"/>
+
+  <g>
+    <g class="w1">
+      <path d="M0,132 C70,116 140,116 210,132 C280,148 350,148 420,132 C490,116 560,116 630,132 C700,148 770,148 840,132 L840,170 L0,170 Z" fill="#22d3ee" opacity=".06"/>
+      <path d="M0,146 C70,136 140,136 210,146 C280,156 350,156 420,146 C490,136 560,136 630,146 C700,156 770,156 840,146 L840,170 L0,170 Z" fill="#22d3ee" opacity=".045"/>
+    </g>
+    <g class="w2" opacity=".8">
+      <path d="M0,138 C80,124 160,124 240,138 C320,152 400,152 480,138 C560,124 640,124 720,138 C780,148 820,148 840,144 L840,170 L0,170 Z" fill="#38bdf8" opacity=".05"/>
+    </g>
+  </g>
+
+  <g clip-path="url(#footClip)">
+    <rect x="-420" y="0" width="420" height="170" fill="url(#bandGrad)" class="band"/>
+  </g>
+
+  <g class="drift1"><circle cx="150" cy="120" r="1.8" fill="#22d3ee" opacity=".5"/></g>
+  <g class="drift2"><circle cx="690" cy="112" r="1.5" fill="#a78bfa" opacity=".45"/></g>
+
+  <text x="420" y="62" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="24" font-weight="700" fill="#f1f5f9" letter-spacing="3">ARNAV PAGARE</text>
+  <text x="420" y="92" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="15" fill="#22d3ee">@arnav27-22<tspan class="blink" fill="#22d3ee">▌</tspan></text>
+  <text x="420" y="118" text-anchor="middle" font-family="'JetBrains Mono',Consolas,monospace" font-size="12" fill="#64748b" class="gentle">thanks for exploring · github.com/arnav27-22</text>
+</svg>
