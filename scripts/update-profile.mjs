@@ -11,7 +11,7 @@ const TECH_DATA_PATH = join(ROOT, 'generated', 'tech.json');
 const AVATAR_PATH = join(ROOT, 'assets', 'avatar.png');
 const CONTRIB_PATH = join(ROOT, 'assets', 'contribution.svg');
 const TECH_DIR = join(ROOT, 'assets', 'tech');
-const REGIONS = ['SYNC', 'STATS', 'PROFILE', 'TECH', 'TECH2', 'PROJECTS', 'LIVE', 'CONTRIB'];
+const REGIONS = ['SYNC', 'TECH', 'TECH2', 'PROJECTS', 'LIVE', 'CONTRIB'];
 const mono = "'JetBrains Mono',Consolas,monospace";
 
 const C = {
@@ -297,7 +297,7 @@ function techImg(key, height) {
 }
 
 function renderPills(techKeys) {
-  const pills = techKeys.slice(0, 10).map((k) => {
+  const pills = techKeys.map((k) => {
     const m = TECH_META[k];
     if (!m || !LOGOS.has(m.logo)) return null;
     return `<span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/${m.logo}" width="15" height="15" alt="${m.label}" style="vertical-align:-2px;"> <span style="font-size:12px;color:${m.cat === 'core' ? C.soft : C.b};">${m.label}</span></span>`;
@@ -572,8 +572,6 @@ async function main() {
 
   const R = {
     SYNC: renderSync(data.stats, today, commits, lastPush),
-    STATS: renderStats(data.stats),
-    PROFILE: renderProfile(data.stats, today),
     TECH: renderTechTable(techKeys),
     TECH2: renderPills(techKeys),
     PROJECTS: renderProjects(selected),

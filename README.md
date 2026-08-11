@@ -1,9 +1,69 @@
 <!-- ================================================================ -->
 <!--  AUTO-GENERATED FILE · UI curated · data synced by github actions -->
-<!--  sections: hero · terminal profile · tech stack · projects        -->
-<!--  stats · contribution activity · live projects · current focus    -->
-<!--  connect · footer                                                 -->
+<!--  sections: gitskins skin · hero · identity · tech stack           -->
+<!--  projects · live deployments · contribution activity · connect    -->
+<!--  footer                                                           -->
 <!-- ================================================================ -->
+
+# arnav27-22
+
+## Header
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/hero?username=arnav27-22&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/hero?username=arnav27-22&theme=github-dark" alt="arnav27-22 hero section" />
+  </picture>
+</p>
+
+## About Me
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/about?username=arnav27-22&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/about?username=arnav27-22&theme=github-dark" alt="arnav27-22 about section" />
+  </picture>
+</p>
+
+## Skills
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stack?username=arnav27-22&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/stack?username=arnav27-22&theme=github-dark" alt="arnav27-22 stack section" />
+  </picture>
+</p>
+
+## GitHub Stats
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/stats?username=arnav27-22&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/stats?username=arnav27-22&theme=github-dark" alt="arnav27-22 stats section" />
+  </picture>
+</p>
+
+## Projects
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/projects?username=arnav27-22&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/projects?username=arnav27-22&theme=github-dark" alt="arnav27-22 projects section" />
+  </picture>
+</p>
+
+## Connect
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/social?username=arnav27-22&theme=github-dark&mode=light" />
+    <img src="https://www.gitskins.com/api/section/social?username=arnav27-22&theme=github-dark" alt="arnav27-22 social section" />
+  </picture>
+</p>
+
+---
+---
+
 <div align="center">
 
 <!-- 1 · HERO -->
@@ -15,14 +75,18 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/Full%20Stack%20Developer-CAFF3C?style=flat-square&labelColor=060D08&color=1A2B1A&logo=typescript&logoColor=CAFF3C" alt="title" />
+<img width="100%" src="assets/identity-terminal.svg" alt="Animated terminal identity — 18 | 27/7 · Founder of AROM Studio · Web Developer • UI/UX • AI Enthusiast · turning ideas into digital products" />
+
+<br/>
+
 <img src="https://img.shields.io/badge/%F0%9F%93%8D_India-1A2B1A?style=flat-square&labelColor=060D08&logoColor=CAFF3C" alt="location" />
-<img src="https://img.shields.io/badge/%40arnav.om27-Instagram-CAFF3C?style=flat-square&logo=instagram&logoColor=000000&labelColor=060D08" alt="instagram" />
+<a href="https://www.instagram.com/arnav.om27/"><img src="https://img.shields.io/badge/%40arnav.om27-Instagram-CAFF3C?style=flat-square&logo=instagram&logoColor=000000&labelColor=060D08" alt="instagram" /></a>
 
 <br/><br/>
 
 <a href="mailto:arnavpagare200827@gmail.com"><img src="https://img.shields.io/badge/Email-CAFF3C?style=for-the-badge&logo=gmail&logoColor=000000&labelColor=060D08" alt="email" /></a>
 <a href="https://github.com/arnav27-22"><img src="https://img.shields.io/badge/GitHub-CAFF3C?style=for-the-badge&logo=github&logoColor=000000&labelColor=060D08" alt="github" /></a>
+<a href="https://www.instagram.com/arnav.om27/"><img src="https://img.shields.io/badge/%40arnav.om27-CAFF3C?style=for-the-badge&logo=instagram&logoColor=000000&labelColor=060D08" alt="instagram" /></a>
 
 <br/><br/>
 
@@ -34,29 +98,51 @@
 
 ---
 
-## `> whoami`
-
-Full-stack developer building web apps, tools &amp; products — TypeScript end to end. React 19 + Vite frontends, Express 5 APIs with Prisma + PostgreSQL, Redis caching, Docker deployments, and Next.js platforms — shipped and maintained solo.
-
-```bash
-$ cat .profile
-
-ROLE        =  Full-Stack Developer
-STACK       =  TypeScript  |  React  |  Next.js  |  Node.js
-DOMAIN      =  Web Apps  |  SaaS Tools  |  Developer Products
-BUILDING    =  arom-studio  |  Share-FIle
-CONTENT     =  @arnav.om27
-LOCATION    =  India
-OPEN_TO     =  Full-Stack Roles  +  Web Products
-```
-
----
-
 ## `> ls /tech-stack`
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=ts,js,html,css,react,nextjs,vite,tailwind,framer,nodejs,express,prisma,postgres,redis,docker,aws,vercel&theme=dark" alt="tech stack" />
+<img src="https://skillicons.dev/icons?i=ts,js,html,css,react,nextjs,vite,tailwind,framer,nodejs,express,prisma,postgres,redis,docker,aws,vercel,git,github,linux,bash,npm&theme=dark" alt="tech stack" />
+
+<br/>
+
+**language**
+
+<img src="https://img.shields.io/badge/TypeScript-CAFF3C?style=flat-square&logo=typescript&logoColor=000000&labelColor=060D08" alt="typescript" />
+<img src="https://img.shields.io/badge/JavaScript-CAFF3C?style=flat-square&logo=javascript&logoColor=000000&labelColor=060D08" alt="javascript" />
+<img src="https://img.shields.io/badge/HTML5-CAFF3C?style=flat-square&logo=html5&logoColor=000000&labelColor=060D08" alt="html" />
+<img src="https://img.shields.io/badge/CSS3-CAFF3C?style=flat-square&logo=css3&logoColor=000000&labelColor=060D08" alt="css" />
+
+<br/><br/>
+
+**framework & ui**
+
+<img src="https://img.shields.io/badge/React-CAFF3C?style=flat-square&logo=react&logoColor=000000&labelColor=060D08" alt="react" />
+<img src="https://img.shields.io/badge/Next.js-CAFF3C?style=flat-square&logo=nextdotjs&logoColor=000000&labelColor=060D08" alt="nextjs" />
+<img src="https://img.shields.io/badge/Vite-CAFF3C?style=flat-square&logo=vite&logoColor=000000&labelColor=060D08" alt="vite" />
+<img src="https://img.shields.io/badge/Tailwind%20CSS-CAFF3C?style=flat-square&logo=tailwindcss&logoColor=000000&labelColor=060D08" alt="tailwind" />
+<img src="https://img.shields.io/badge/Framer%20Motion-CAFF3C?style=flat-square&logo=framer&logoColor=000000&labelColor=060D08" alt="framer" />
+
+<br/><br/>
+
+**backend & data**
+
+<img src="https://img.shields.io/badge/Node.js-CAFF3C?style=flat-square&logo=nodedotjs&logoColor=000000&labelColor=060D08" alt="node" />
+<img src="https://img.shields.io/badge/Express-CAFF3C?style=flat-square&logo=express&logoColor=000000&labelColor=060D08" alt="express" />
+<img src="https://img.shields.io/badge/Prisma-CAFF3C?style=flat-square&logo=prisma&logoColor=000000&labelColor=060D08" alt="prisma" />
+<img src="https://img.shields.io/badge/PostgreSQL-CAFF3C?style=flat-square&logo=postgresql&logoColor=000000&labelColor=060D08" alt="postgres" />
+<img src="https://img.shields.io/badge/Redis-CAFF3C?style=flat-square&logo=redis&logoColor=000000&labelColor=060D08" alt="redis" />
+
+<br/><br/>
+
+**cloud & tools**
+
+<img src="https://img.shields.io/badge/AWS-CAFF3C?style=flat-square&logo=amazonaws&logoColor=000000&labelColor=060D08" alt="aws" />
+<img src="https://img.shields.io/badge/Docker-CAFF3C?style=flat-square&logo=docker&logoColor=000000&labelColor=060D08" alt="docker" />
+<img src="https://img.shields.io/badge/Vercel-CAFF3C?style=flat-square&logo=vercel&logoColor=000000&labelColor=060D08" alt="vercel" />
+<img src="https://img.shields.io/badge/Git-CAFF3C?style=flat-square&logo=git&logoColor=000000&labelColor=060D08" alt="git" />
+<img src="https://img.shields.io/badge/GitHub-CAFF3C?style=flat-square&logo=github&logoColor=000000&labelColor=060D08" alt="github" />
+<img src="https://img.shields.io/badge/Linux-CAFF3C?style=flat-square&logo=linux&logoColor=000000&labelColor=060D08" alt="linux" />
 
 </div>
 
@@ -70,13 +156,19 @@ OPEN_TO     =  Full-Stack Roles  +  Web Products
       <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/framer.svg" width="15" height="15" alt="Framer Motion" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Framer Motion</span></span>
       <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/vite.svg" width="15" height="15" alt="Vite" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Vite</span></span>
       <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/react.svg" width="15" height="15" alt="React" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">React</span></span>
-      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/nextdotjs.svg" width="15" height="15" alt="Next.js" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Next.js</span></span></div>
+      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/nextdotjs.svg" width="15" height="15" alt="Next.js" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Next.js</span></span>
+      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/prisma.svg" width="15" height="15" alt="Prisma" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Prisma</span></span>
+      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/express.svg" width="15" height="15" alt="Express" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Express</span></span>
+      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/redis.svg" width="15" height="15" alt="Redis" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Redis</span></span>
+      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/postgresql.svg" width="15" height="15" alt="PostgreSQL" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">PostgreSQL</span></span>
+      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/nodedotjs.svg" width="15" height="15" alt="Node.js" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Node.js</span></span>
+      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/amazonaws.svg" width="15" height="15" alt="AWS" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">AWS</span></span>
+      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/vercel.svg" width="15" height="15" alt="Vercel" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Vercel</span></span></div>
 <!-- AUTO:TECH2_END -->
 
-<details>
-<summary><b>stack details</b> &nbsp;— auto-synced from repo dependencies</summary>
-
 <br/>
+
+<div align="center">
 
 <!-- AUTO:TECH_START -->
 <table role="presentation" width="100%">
@@ -103,7 +195,7 @@ OPEN_TO     =  Full-Stack Roles  +  Web Products
 </table>
 <!-- AUTO:TECH_END -->
 
-</details>
+</div>
 
 ---
 
@@ -165,14 +257,10 @@ OPEN_TO     =  Full-Stack Roles  +  Web Products
 
 </div>
 
-<br/>
-
 <details open>
 <summary><b>&#9654; arom-studio &mdash; Web Design &amp; Development Agency Platform</b></summary>
 
 <br/>
-
-Marketing experience and admin dashboard in React 19 + Vite, backed by an Express 5 API with Prisma + PostgreSQL, Redis caching, S3 / Vercel Blob storage, email automation, JWT auth, document generation, analytics, CI/CD and Docker. Deployed on Vercel.
 
 | Aspect | Detail |
 | :-- | :-- |
@@ -189,8 +277,6 @@ Marketing experience and admin dashboard in React 19 + Vite, backed by an Expres
 
 <br/>
 
-Secure file-sharing platform on Next.js 15 + React 19: password-protected links, expiration timers, custom aliases, AES-256 encryption, WebRTC peer-to-peer transfer, multi-cloud storage (S3 / R2 / B2) and QR download codes &mdash; glassmorphism UI with Framer Motion.
-
 | Aspect | Detail |
 | :-- | :-- |
 | **Stack** | Next.js 15 &middot; React 19 &middot; Framer Motion &middot; WebRTC &middot; AES-256 |
@@ -199,113 +285,6 @@ Secure file-sharing platform on Next.js 15 + React 19: password-protected links,
 | **Repo** | [`github.com/arnav27-22/Share-FIle`](https://github.com/arnav27-22/Share-FIle) |
 
 </details>
-
----
-
-## `> git stats --global`
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=arnav27-22&show_icons=true&count_private=true&hide_border=true&title_color=CAFF3C&icon_color=8AFF57&text_color=E8F5E1&bg_color=0A0F08" alt="stats" />
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=arnav27-22&hide_border=true&background=0A0F08&stroke=CAFF3C&ring=8AFF57&fire=39FF14&currStreakLabel=CAFF3C&sideLabels=8AFF57&dates=8AFF57&currStreakNum=CAFF3C&sideNums=CAFF3C" alt="streak" />
-
-<br/>
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arnav27-22&layout=compact&hide_border=true&langs_count=8&title_color=CAFF3C&text_color=E8F5E1&bg_color=0A0F08" alt="top-langs" />
-
-<br/><br/>
-
-<!-- AUTO:STATS_START -->
-<table role="presentation" width="100%" style="max-width:840px;margin:0 auto;">
-  <tr>
-    <td style="background-color:#0a0f08;border:1px solid #1a2b1a;border-radius:14px;padding:18px 10px;text-align:center;width:19%;">
-      <span style="font-size:30px;font-weight:700;color:#caff3c;font-family:'JetBrains Mono',Consolas,monospace;">6</span><br>
-      <span style="font-size:10.5px;color:#6f9c6f;letter-spacing:2px;">REPOSITORIES</span>
-    </td>
-    <td style="width:1%;"></td>
-    <td style="background-color:#0a0f08;border:1px solid #1a2b1a;border-radius:14px;padding:18px 10px;text-align:center;width:19%;">
-      <span style="font-size:30px;font-weight:700;color:#8aff57;font-family:'JetBrains Mono',Consolas,monospace;">1</span><br>
-      <span style="font-size:10.5px;color:#6f9c6f;letter-spacing:2px;">STARS</span>
-    </td>
-    <td style="width:1%;"></td>
-    <td style="background-color:#0a0f08;border:1px solid #1a2b1a;border-radius:14px;padding:18px 10px;text-align:center;width:19%;">
-      <span style="font-size:30px;font-weight:700;color:#7dff9a;font-family:'JetBrains Mono',Consolas,monospace;">0</span><br>
-      <span style="font-size:10.5px;color:#6f9c6f;letter-spacing:2px;">FOLLOWERS</span>
-    </td>
-    <td style="width:1%;"></td>
-    <td style="background-color:#0a0f08;border:1px solid #1a2b1a;border-radius:14px;padding:18px 10px;text-align:center;width:19%;">
-      <span style="font-size:30px;font-weight:700;color:#b8ffd0;font-family:'JetBrains Mono',Consolas,monospace;">3</span><br>
-      <span style="font-size:10.5px;color:#6f9c6f;letter-spacing:2px;">FOLLOWING</span>
-    </td>
-    <td style="width:1%;"></td>
-    <td style="background-color:#0a0f08;border:1px solid #1a2b1a;border-radius:14px;padding:18px 10px;text-align:center;width:19%;">
-      <span style="font-size:30px;font-weight:700;color:#eaff3c;font-family:'JetBrains Mono',Consolas,monospace;">0</span><br>
-      <span style="font-size:10.5px;color:#6f9c6f;letter-spacing:2px;">FORKS</span>
-    </td>
-  </tr>
-</table>
-<!-- AUTO:STATS_END -->
-
-</div>
-
----
-
-## `> cat profile-signal.json`
-
-<!-- AUTO:PROFILE_START -->
-<div style="text-align:center;">
-  <div style="font-size:12px;color:#39ff14;font-family:'JetBrains Mono',Consolas,monospace;letter-spacing:1px;line-height:2;"><span style="color:#39ff14;">●</span> <strong>ONLINE</strong> · SYNCED</div>
-  <br>
-  <div style="font-size:30px;font-weight:700;color:#8aff57;font-family:'JetBrains Mono',Consolas,monospace;line-height:1.1;">1</div>
-  <div style="font-size:10.5px;color:#6f9c6f;letter-spacing:2px;padding-bottom:10px;">STARS</div>
-  <div style="font-size:12px;color:#c8e6b5;font-family:'JetBrains Mono',Consolas,monospace;">followers <span style="color:#8aff57;">0</span> · following <span style="color:#8aff57;">3</span></div>
-  <br>
-  <div style="font-size:10.5px;color:#44633f;font-family:'JetBrains Mono',Consolas,monospace;">signal 6.1.0 · sync 2026-08-11</div>
-</div>
-<!-- AUTO:PROFILE_END -->
-
----
-
-## `> cat contribution-report --detailed`
-
-<div align="center">
-
-<!-- AUTO:CONTRIB_START -->
-<div style="font-size:11px;color:#6f9c6f;font-family:'JetBrains Mono',Consolas,monospace;">306 contributions · 2025-08-10 → 2026-08-11</div>
-<!-- AUTO:CONTRIB_END -->
-
-<img width="100%" src="assets/contribution.svg" alt="GitHub contribution calendar for ARNAV PAGARE (@arnav27-22) — real contribution data for the last 12 months, regenerated daily" />
-
-<br/><br/>
-
-<img src="./assets/contribution-snake.svg" alt="Contribution snake animation built from real GitHub contribution data" width="100%" />
-
-</div>
-
----
-
-## `> cat current-focus.yaml`
-
-```yaml
-learning:
-  - Production-grade full-stack architecture
-  - AI-powered developer tooling
-
-building:
-  - arom-studio  # agency platform, live on Vercel
-  - Share-FIle   # secure next-gen file sharing
-
-creating:
-  - instagram: "@arnav.om27"  # web & AI tools content
-
-exploring:
-  - Real-time features, streaming & edge deployments
-
-open_to:
-  - Full-Stack Engineering roles
-  - Web product teams
-  - AI tooling & SaaS opportunities
-```
 
 ---
 
@@ -344,13 +323,31 @@ open_to:
 
 ---
 
+## `> cat contribution-report --detailed`
+
+<div align="center">
+
+<!-- AUTO:CONTRIB_START -->
+<div style="font-size:11px;color:#6f9c6f;font-family:'JetBrains Mono',Consolas,monospace;">306 contributions · 2025-08-10 → 2026-08-11</div>
+<!-- AUTO:CONTRIB_END -->
+
+<img width="100%" src="assets/contribution.svg" alt="GitHub contribution calendar for ARNAV PAGARE (@arnav27-22) — real contribution data for the last 12 months, regenerated daily" />
+
+<br/><br/>
+
+<img src="./assets/contribution-snake.svg" alt="Contribution snake animation built from real GitHub contribution data" width="100%" />
+
+</div>
+
+---
+
 ## `> ping me`
 
 <div align="center">
 
 <a href="mailto:arnavpagare200827@gmail.com"><img src="https://img.shields.io/badge/Gmail-CAFF3C?style=for-the-badge&logo=gmail&logoColor=000000&labelColor=060D08" alt="gmail" /></a>
 <a href="https://github.com/arnav27-22"><img src="https://img.shields.io/badge/GitHub-CAFF3C?style=for-the-badge&logo=github&logoColor=000000&labelColor=060D08" alt="github" /></a>
-<a href="https://www.instagram.com/arnav.om27"><img src="https://img.shields.io/badge/%40arnav.om27-CAFF3C?style=for-the-badge&logo=instagram&logoColor=000000&labelColor=060D08" alt="instagram" /></a>
+<a href="https://www.instagram.com/arnav.om27/"><img src="https://img.shields.io/badge/%40arnav.om27-CAFF3C?style=for-the-badge&logo=instagram&logoColor=000000&labelColor=060D08" alt="instagram" /></a>
 
 </div>
 
@@ -364,7 +361,7 @@ open_to:
 
 <div align="center">
 
-<sub><i>// by day: building fast, by night: shipping products &amp; sharing it all on <a href="https://www.instagram.com/arnav.om27">@arnav.om27</a></i></sub>
+<sub><i>// by day: building fast, by night: shipping products &amp; sharing it all on <a href="https://www.instagram.com/arnav.om27/">@arnav.om27</a></i></sub>
 
 <br/><br/>
 
