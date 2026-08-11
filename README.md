@@ -66,7 +66,7 @@
   <br>
   <div style="font-size:30px;font-weight:700;color:#7dd3fc;font-family:'JetBrains Mono',Consolas,monospace;line-height:1.1;">1</div>
   <div style="font-size:10.5px;color:#6b7f96;letter-spacing:2px;padding-bottom:10px;">STARS</div>
-  <div style="font-size:12px;color:#cbd5e1;font-family:'JetBrains Mono',Consolas,monospace;">followers <span style="color:#7dd3fc;">0</span> · following <span style="color:#7dd3fc;">2</span></div>
+  <div style="font-size:12px;color:#cbd5e1;font-family:'JetBrains Mono',Consolas,monospace;">followers <span style="color:#7dd3fc;">0</span> · following <span style="color:#7dd3fc;">3</span></div>
   <br>
   <div style="font-size:10.5px;color:#475569;font-family:'JetBrains Mono',Consolas,monospace;">signal 6.1.0 · sync 2026-08-11</div>
 </div>
@@ -98,7 +98,7 @@
     </td>
     <td style="width:1%;"></td>
     <td style="background-color:#0f1720;border:1px solid #223148;border-radius:14px;padding:18px 10px;text-align:center;width:19%;">
-      <span style="font-size:30px;font-weight:700;color:#a78bfa;font-family:'JetBrains Mono',Consolas,monospace;">2</span><br>
+      <span style="font-size:30px;font-weight:700;color:#a78bfa;font-family:'JetBrains Mono',Consolas,monospace;">3</span><br>
       <span style="font-size:10.5px;color:#6b7f96;letter-spacing:2px;">FOLLOWING</span>
     </td>
     <td style="width:1%;"></td>
@@ -111,7 +111,7 @@
 <!-- AUTO:STATS_END -->
 <br>
 <!-- AUTO:SYNC_START -->
-<div style="text-align:center;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#6b7f96;letter-spacing:1px;"><span style="color:#34d399;">●</span> <span style="color:#cbd5e1;">PROFILE DATA SYNCED</span> · <span style="color:#7dd3fc;">2026-08-11</span> UTC · commits <span style="color:#7dd3fc;">296</span> · latest_repo <span style="color:#7dd3fc;">arom-studio · 2026-07-29</span></div>
+<div style="text-align:center;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#6b7f96;letter-spacing:1px;"><span style="color:#34d399;">●</span> <span style="color:#cbd5e1;">PROFILE DATA SYNCED</span> · <span style="color:#7dd3fc;">2026-08-11</span> UTC · commits <span style="color:#7dd3fc;">297</span> · latest_repo <span style="color:#7dd3fc;">arom-studio · 2026-07-29</span></div>
 <!-- AUTO:SYNC_END -->
 <img src="./assets/section-divider.svg" alt="Section divider" width="60%" style="max-width:420px;">
 <!-- 4 · TECH STACK -->
