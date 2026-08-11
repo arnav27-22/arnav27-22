@@ -15,10 +15,10 @@ const REGIONS = ['SYNC', 'STATS', 'PROFILE', 'TECH', 'TECH2', 'PROJECTS', 'LIVE'
 const mono = "'JetBrains Mono',Consolas,monospace";
 
 const C = {
-  cyan: '#22d3ee', soft: '#7dd3fc', blue: '#60a5fa', purple: '#a78bfa',
-  green: '#34d399', yellow: '#eab308',
-  panel: '#0f1720', border: '#223148',
-  a: '#f1f5f9', b: '#cbd5e1', c: '#a3b3c8', mute: '#6b7f96', dim: '#475569',
+  cyan: '#caff3c', soft: '#8aff57', blue: '#7dff9a', purple: '#b8ffd0',
+  green: '#39ff14', yellow: '#eaff3c',
+  panel: '#0a0f08', border: '#1a2b1a',
+  a: '#e8f5e1', b: '#c8e6b5', c: '#a8c99a', mute: '#6f9c6f', dim: '#44633f',
 };
 
 const CURATED = {
@@ -176,8 +176,8 @@ function card(p, isTop) {
         <br><br>
         <span style="font-size:11.5px;color:${C.mute};">${techs}</span>
         <br><br>
-        <a href="${p.url}" style="display:inline-block;background-color:${isTop ? C.cyan : '#21262d'};color:${isTop ? '#062018' : C.b};text-decoration:none;font-size:12px;font-weight:700;border-radius:8px;padding:7px 14px;">VIEW REPOSITORY ↗</a>${p.homepage ? `
-        <a href="${p.homepage}" style="display:inline-block;background-color:#21262d;color:#dbe4ee;text-decoration:none;font-size:12px;font-weight:600;border-radius:8px;padding:7px 14px;">LIVE DEMO ↗</a>` : ''}
+        <a href="${p.url}" style="display:inline-block;background-color:${isTop ? C.cyan : '#1a2b1a'};color:${isTop ? '#0a0f08' : C.b};text-decoration:none;font-size:12px;font-weight:700;border-radius:8px;padding:7px 14px;">VIEW REPOSITORY ↗</a>${p.homepage ? `
+        <a href="${p.homepage}" style="display:inline-block;background-color:#1a2b1a;color:#c8e6b5;text-decoration:none;font-size:12px;font-weight:600;border-radius:8px;padding:7px 14px;">LIVE DEMO ↗</a>` : ''}
         <br><br>
         <span style="font-size:11px;color:${C.dim};font-family:${mono};">${meta.join(' · ')}</span>
       </td>
@@ -217,9 +217,9 @@ function liveCard(p) {
         <br>
         <span style="font-size:12.5px;color:${C.c};line-height:1.6;display:inline-block;">${esc(desc)}</span>
         <br><br>
-        <a href="${esc(p.homepage)}" style="display:inline-block;background-color:${C.cyan};color:#062018;text-decoration:none;font-size:12px;font-weight:700;border-radius:8px;padding:7px 14px;">LIVE DEMO ↗</a>
+        <a href="${esc(p.homepage)}" style="display:inline-block;background-color:${C.cyan};color:#0a0f08;text-decoration:none;font-size:12px;font-weight:700;border-radius:8px;padding:7px 14px;">LIVE DEMO ↗</a>
         &nbsp;
-        <a href="${p.url}" style="display:inline-block;background-color:#21262d;color:${C.b};text-decoration:none;font-size:12px;font-weight:600;border-radius:8px;padding:7px 14px;">GITHUB</a>
+        <a href="${p.url}" style="display:inline-block;background-color:#1a2b1a;color:${C.b};text-decoration:none;font-size:12px;font-weight:600;border-radius:8px;padding:7px 14px;">GITHUB</a>
       </td>
     </tr>
   </table>
@@ -300,7 +300,7 @@ function renderPills(techKeys) {
   const pills = techKeys.slice(0, 10).map((k) => {
     const m = TECH_META[k];
     if (!m || !LOGOS.has(m.logo)) return null;
-    return `<span style="display:inline-block;background-color:#101a28;border:1px solid #223148;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/${m.logo}" width="15" height="15" alt="${m.label}" style="vertical-align:-2px;"> <span style="font-size:12px;color:${m.cat === 'core' ? C.soft : C.b};">${m.label}</span></span>`;
+    return `<span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/${m.logo}" width="15" height="15" alt="${m.label}" style="vertical-align:-2px;"> <span style="font-size:12px;color:${m.cat === 'core' ? C.soft : C.b};">${m.label}</span></span>`;
   }).filter(Boolean);
   return `<div>${pills.join('\n      ')}</div>`;
 }
@@ -312,10 +312,10 @@ function renderTechTable(techKeys) {
     if (!imgs.length) return null;
     return [
       `<tr>`,
-      `  <td style="width:22%;text-align:left;font-size:11px;color:#6b7f96;letter-spacing:2px;vertical-align:middle;">${CAT_LABEL[cat]}</td>`,
+      `  <td style="width:22%;text-align:left;font-size:11px;color:${C.mute};letter-spacing:2px;vertical-align:middle;">${CAT_LABEL[cat]}</td>`,
       `  <td style="text-align:left;">${imgs.join('&nbsp;&nbsp; ')}</td>`,
       `</tr>`,
-      ...(techs.length ? [`<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#475569;">${techs.map((k) => TECH_META[k].label).join(' · ')}</td></tr>`] : []),
+      ...(techs.length ? [`<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:${C.dim};">${techs.map((k) => TECH_META[k].label).join(' · ')}</td></tr>`] : []),
     ].join('\n');
   }).filter(Boolean);
   return `<table role="presentation" width="100%">\n${groups.join('\n')}\n</table>`;
@@ -333,7 +333,7 @@ async function renderContributionSvg() {
   const dates = cells.map((c) => c.date).sort();
   if (!dates.length) throw new Error('no contribution dates');
   const first = new Date(dates[0]);
-  const PAL = { 0: '#141c27', 1: '#0e4429', 2: '#006d32', 3: '#26a641', 4: '#39d353' };
+  const PAL = { 0: '#141c27', 1: '#1a3c1f', 2: '#2c6b2e', 3: '#3f9e3f', 4: '#39ff14' };
   const CELL = 9, PITCH = 12, X0 = 34, Y0 = 22;
   const maxLvl = Math.max(...cells.map((c) => c.level));
   const months = new Map();
@@ -348,10 +348,10 @@ async function renderContributionSvg() {
   });
   const W = X0 + (maxWeek + 1) * PITCH + 16;
   const H = Y0 + 7 * PITCH + 46;
-  const monthsHtml = [...months.entries()].map(([wi, m]) => `<text x="${X0 + wi * PITCH}" y="${Y0 - 8}" font-family="'JetBrains Mono',Consolas,monospace" font-size="9" fill="#6b7f96">${m}</text>`).join('\n');
+  const monthsHtml = [...months.entries()].map(([wi, m]) => `<text x="${X0 + wi * PITCH}" y="${Y0 - 8}" font-family="'JetBrains Mono',Consolas,monospace" font-size="9" fill="${C.mute}">${m}</text>`).join('\n');
   const rectsHtml = rects.map((r) =>
     `<rect x="${r.x}" y="${r.y}" width="${CELL}" height="${CELL}" rx="2.5" fill="${r.fill}"${r.level === maxLvl && maxLvl > 0 ? ' class="hot"' : ''}/>`).join('\n');
-  const dayLbl = ['sun', 'mon', 'wed', 'fri'].map((l, i) => `<text x="14" y="${Y0 + [0, 1, 3, 5][i] * PITCH + 7}" font-family="'JetBrains Mono',Consolas,monospace" font-size="9" fill="#475569">${l}</text>`).join('\n');
+  const dayLbl = ['sun', 'mon', 'wed', 'fri'].map((l, i) => `<text x="14" y="${Y0 + [0, 1, 3, 5][i] * PITCH + 7}" font-family="'JetBrains Mono',Consolas,monospace" font-size="9" fill="${C.dim}">${l}</text>`).join('\n');
   return {
     total,
     from: dates[0],
@@ -363,7 +363,7 @@ async function renderContributionSvg() {
     @keyframes cgpulse { 0%,100% { opacity: 1 } 50% { opacity: .55 } }
     .hot { animation: cgpulse 3.4s ease-in-out infinite }
   </style>
-  <rect width="${W}" height="${H}" rx="14" fill="#0b1117"/>
+  <rect width="${W}" height="${H}" rx="14" fill="${C.panel}"/>
   ${dayLbl}
   ${monthsHtml}
   ${rectsHtml}
