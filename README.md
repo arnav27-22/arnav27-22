@@ -75,6 +75,10 @@
 
 <br/>
 
+<img width="100%" src="assets/contribution-snake.gif" alt="Snake game animation eating contribution dots on the GitHub grid" />
+
+<br/>
+
 <img width="100%" src="assets/identity-terminal.svg" alt="Animated terminal identity — 18 | 27/7 · Founder of AROM Studio · Web Developer • UI/UX • AI Enthusiast · turning ideas into digital products" />
 
 <br/>
@@ -332,10 +336,6 @@
 <!-- AUTO:CONTRIB_END -->
 
 <img width="100%" src="assets/contribution.svg" alt="GitHub contribution calendar for ARNAV PAGARE (@arnav27-22) — real contribution data for the last 12 months, regenerated daily" />
-
-<br/><br/>
-
-<img src="./assets/contribution-snake.svg" alt="Contribution snake animation built from real GitHub contribution data" width="100%" />
 
 </div>
 
