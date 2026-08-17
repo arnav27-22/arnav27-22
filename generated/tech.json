@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T17:33:11.231Z",
+  "generatedAt": "2026-08-17T15:54:41.450Z",
   "topLangs": [
     "TypeScript",
     "JavaScript",
@@ -8,20 +8,7 @@
     "Dockerfile"
   ],
   "repos": {
-    "arom-studio": [
-      "prisma",
-      "tailwind",
-      "framer",
-      "vite",
-      "react",
-      "express",
-      "redis",
-      "postgresql",
-      "aws",
-      "vercel",
-      "node",
-      "typescript"
-    ],
+    "arom-studio": [],
     "Share-FIle": [
       "prisma",
       "tailwind",
@@ -76,9 +63,9 @@
       "cat": "ui"
     },
     {
-      "key": "vite",
-      "label": "Vite",
-      "logo": "vite.svg",
+      "key": "next.js",
+      "label": "Next.js",
+      "logo": "nextdotjs.svg",
       "cat": "ui"
     },
     {
@@ -88,33 +75,9 @@
       "cat": "ui"
     },
     {
-      "key": "next.js",
-      "label": "Next.js",
-      "logo": "nextdotjs.svg",
-      "cat": "ui"
-    },
-    {
       "key": "prisma",
       "label": "Prisma",
       "logo": "prisma.svg",
-      "cat": "backend"
-    },
-    {
-      "key": "express",
-      "label": "Express",
-      "logo": "express.svg",
-      "cat": "backend"
-    },
-    {
-      "key": "redis",
-      "label": "Redis",
-      "logo": "redis.svg",
-      "cat": "backend"
-    },
-    {
-      "key": "postgresql",
-      "label": "PostgreSQL",
-      "logo": "postgresql.svg",
       "cat": "backend"
     },
     {
@@ -122,18 +85,6 @@
       "label": "Node.js",
       "logo": "nodedotjs.svg",
       "cat": "backend"
-    },
-    {
-      "key": "aws",
-      "label": "AWS",
-      "logo": "amazonaws.svg",
-      "cat": "cloud"
-    },
-    {
-      "key": "vercel",
-      "label": "Vercel",
-      "logo": "vercel.svg",
-      "cat": "cloud"
     }
   ]
 }

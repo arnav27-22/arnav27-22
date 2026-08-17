@@ -158,16 +158,10 @@
       <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/docker.svg" width="15" height="15" alt="Docker" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Docker</span></span>
       <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/tailwindcss.svg" width="15" height="15" alt="Tailwind CSS" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Tailwind CSS</span></span>
       <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/framer.svg" width="15" height="15" alt="Framer Motion" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Framer Motion</span></span>
-      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/vite.svg" width="15" height="15" alt="Vite" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Vite</span></span>
-      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/react.svg" width="15" height="15" alt="React" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">React</span></span>
       <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/nextdotjs.svg" width="15" height="15" alt="Next.js" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Next.js</span></span>
+      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/react.svg" width="15" height="15" alt="React" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">React</span></span>
       <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/prisma.svg" width="15" height="15" alt="Prisma" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Prisma</span></span>
-      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/express.svg" width="15" height="15" alt="Express" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Express</span></span>
-      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/redis.svg" width="15" height="15" alt="Redis" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Redis</span></span>
-      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/postgresql.svg" width="15" height="15" alt="PostgreSQL" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">PostgreSQL</span></span>
-      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/nodedotjs.svg" width="15" height="15" alt="Node.js" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Node.js</span></span>
-      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/amazonaws.svg" width="15" height="15" alt="AWS" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">AWS</span></span>
-      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/vercel.svg" width="15" height="15" alt="Vercel" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Vercel</span></span></div>
+      <span style="display:inline-block;background-color:#0d1508;border:1px solid #1a2b1a;border-radius:999px;padding:4px 12px;margin:2px 3px;"><img src="./assets/tech/nodedotjs.svg" width="15" height="15" alt="Node.js" style="vertical-align:-2px;"> <span style="font-size:12px;color:#c8e6b5;">Node.js</span></span></div>
 <!-- AUTO:TECH2_END -->
 
 <br/>
@@ -183,19 +177,19 @@
 <tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#44633f;">TypeScript · JavaScript · HTML · CSS</td></tr>
 <tr>
   <td style="width:22%;text-align:left;font-size:11px;color:#6f9c6f;letter-spacing:2px;vertical-align:middle;">FRAMEWORKS & UI</td>
-  <td style="text-align:left;"><img src="./assets/tech/tailwindcss.svg" alt="Tailwind CSS" title="Tailwind CSS" height="26">&nbsp;&nbsp; <img src="./assets/tech/framer.svg" alt="Framer Motion" title="Framer Motion" height="26">&nbsp;&nbsp; <img src="./assets/tech/vite.svg" alt="Vite" title="Vite" height="26">&nbsp;&nbsp; <img src="./assets/tech/react.svg" alt="React" title="React" height="26">&nbsp;&nbsp; <img src="./assets/tech/nextdotjs.svg" alt="Next.js" title="Next.js" height="26"></td>
+  <td style="text-align:left;"><img src="./assets/tech/tailwindcss.svg" alt="Tailwind CSS" title="Tailwind CSS" height="26">&nbsp;&nbsp; <img src="./assets/tech/framer.svg" alt="Framer Motion" title="Framer Motion" height="26">&nbsp;&nbsp; <img src="./assets/tech/nextdotjs.svg" alt="Next.js" title="Next.js" height="26">&nbsp;&nbsp; <img src="./assets/tech/react.svg" alt="React" title="React" height="26"></td>
 </tr>
-<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#44633f;">Tailwind CSS · Framer Motion · Vite · React · Next.js</td></tr>
+<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#44633f;">Tailwind CSS · Framer Motion · Next.js · React</td></tr>
 <tr>
   <td style="width:22%;text-align:left;font-size:11px;color:#6f9c6f;letter-spacing:2px;vertical-align:middle;">BACKEND & DATA</td>
-  <td style="text-align:left;"><img src="./assets/tech/prisma.svg" alt="Prisma" title="Prisma" height="26">&nbsp;&nbsp; <img src="./assets/tech/express.svg" alt="Express" title="Express" height="26">&nbsp;&nbsp; <img src="./assets/tech/redis.svg" alt="Redis" title="Redis" height="26">&nbsp;&nbsp; <img src="./assets/tech/postgresql.svg" alt="PostgreSQL" title="PostgreSQL" height="26">&nbsp;&nbsp; <img src="./assets/tech/nodedotjs.svg" alt="Node.js" title="Node.js" height="26"></td>
+  <td style="text-align:left;"><img src="./assets/tech/prisma.svg" alt="Prisma" title="Prisma" height="26">&nbsp;&nbsp; <img src="./assets/tech/nodedotjs.svg" alt="Node.js" title="Node.js" height="26"></td>
 </tr>
-<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#44633f;">Prisma · Express · Redis · PostgreSQL · Node.js</td></tr>
+<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#44633f;">Prisma · Node.js</td></tr>
 <tr>
   <td style="width:22%;text-align:left;font-size:11px;color:#6f9c6f;letter-spacing:2px;vertical-align:middle;">CLOUD & TOOLS</td>
-  <td style="text-align:left;"><img src="./assets/tech/docker.svg" alt="Docker" title="Docker" height="26">&nbsp;&nbsp; <img src="./assets/tech/amazonaws.svg" alt="AWS" title="AWS" height="26">&nbsp;&nbsp; <img src="./assets/tech/vercel.svg" alt="Vercel" title="Vercel" height="26"></td>
+  <td style="text-align:left;"><img src="./assets/tech/docker.svg" alt="Docker" title="Docker" height="26"></td>
 </tr>
-<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#44633f;">Docker · AWS · Vercel</td></tr>
+<tr><td colspan="2" style="padding-top:12px;font-size:11px;color:#44633f;">Docker</td></tr>
 </table>
 <!-- AUTO:TECH_END -->
 
@@ -354,7 +348,7 @@
 ---
 
 <!-- AUTO:SYNC_START -->
-<div style="text-align:center;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#6f9c6f;letter-spacing:1px;"><span style="color:#39ff14;">●</span> <span style="color:#c8e6b5;">PROFILE DATA SYNCED</span> · <span style="color:#8aff57;">2026-08-17</span> UTC · latest_repo <span style="color:#8aff57;">arom-studio · 2026-07-29</span></div>
+<div style="text-align:center;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#6f9c6f;letter-spacing:1px;"><span style="color:#39ff14;">●</span> <span style="color:#c8e6b5;">PROFILE DATA SYNCED</span> · <span style="color:#8aff57;">2026-08-17</span> UTC · commits <span style="color:#8aff57;">514</span> · latest_repo <span style="color:#8aff57;">arom-studio · 2026-07-29</span></div>
 <!-- AUTO:SYNC_END -->
 
 <br/>
