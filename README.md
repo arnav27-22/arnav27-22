@@ -237,7 +237,7 @@
   <table role="presentation" width="100%">
     <tr>
       <td style="background-color:#0a0f08;border:1px solid #1a2b1a;border-radius:14px;padding:20px 20px;">
-        <span style="display:inline-block;border-radius:999px;padding:3px 11px;font-size:10px;color:#39ff14;letter-spacing:1.5px;font-family:'JetBrains Mono',Consolas,monospace;"><span style="color:#39ff14;">●</span> IN DEVELOPMENT</span>
+        <span style="display:inline-block;border-radius:999px;padding:3px 11px;font-size:10px;color:#b8ffd0;letter-spacing:1.5px;font-family:'JetBrains Mono',Consolas,monospace;"><span style="color:#b8ffd0;">●</span> EXPERIMENTAL</span>
         <br><br>
         <span style="font-size:20px;font-weight:700;color:#e8f5e1;">Share-FIle</span>
         <br>
@@ -332,7 +332,7 @@
 <div align="center">
 
 <!-- AUTO:CONTRIB_START -->
-<div style="font-size:11px;color:#6f9c6f;font-family:'JetBrains Mono',Consolas,monospace;">895 contributions · 2025-08-24 → 2026-08-28</div>
+<div style="font-size:11px;color:#6f9c6f;font-family:'JetBrains Mono',Consolas,monospace;">897 contributions · 2025-08-24 → 2026-08-28</div>
 <!-- AUTO:CONTRIB_END -->
 
 <img width="100%" src="assets/contribution.svg" alt="GitHub contribution calendar for ARNAV PAGARE (@arnav27-22) — real contribution data for the last 12 months, regenerated daily" />
@@ -354,7 +354,7 @@
 ---
 
 <!-- AUTO:SYNC_START -->
-<div style="text-align:center;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#6f9c6f;letter-spacing:1px;"><span style="color:#39ff14;">●</span> <span style="color:#c8e6b5;">PROFILE DATA SYNCED</span> · <span style="color:#8aff57;">2026-08-28</span> UTC · commits <span style="color:#8aff57;">888</span> · latest_repo <span style="color:#8aff57;">arom-studio · 2026-07-29</span></div>
+<div style="text-align:center;font-family:'JetBrains Mono',Consolas,monospace;font-size:12px;color:#6f9c6f;letter-spacing:1px;"><span style="color:#39ff14;">●</span> <span style="color:#c8e6b5;">PROFILE DATA SYNCED</span> · <span style="color:#8aff57;">2026-08-28</span> UTC · commits <span style="color:#8aff57;">890</span> · latest_repo <span style="color:#8aff57;">arom-studio · 2026-07-29</span></div>
 <!-- AUTO:SYNC_END -->
 
 <br/>
